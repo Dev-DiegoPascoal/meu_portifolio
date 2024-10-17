@@ -19,12 +19,12 @@ body {
 
 .cabecalho .logo {
     width: 240px;
-    height: 65px;
-    border-radius: 50%;
+    height: 80px;
+    /* border-radius: 50%; */
     border: 2.5px solid #fff;
     text-decoration: underline;
     text-align: center;
-    line-height: 55px;
+    line-height: 48px;
     font-family: "Raleway", sans-serif;
 }
 
