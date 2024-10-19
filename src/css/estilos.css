@@ -91,12 +91,14 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 45px;
     margin-bottom: 24px;
+    margin-top: 25px;
 }
 
 .home .historia p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
-    margin-bottom: 32px;
+    letter-spacing: 2.5px;
+    margin-bottom: 1px;
 }
 
 .home .redes-sociais {
@@ -135,6 +137,19 @@ body {
     background-image: linear-gradient(to right top, #114a99, #007bac, #49a5ac, #a3c9b8, #e8ece2);
     background-size: 180% 180%;
     animation: gradient-animation 4s ease infinite;
+}
+
+.home .container-foto1 img {
+    width: 350px;
+    margin-left: 340px;
+    margin-top: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 1.9s; /* Transição suave */
+}
+
+.home .container-foto1 img:hover {
+    transform: scale(1.02); /* Aumenta a imagem quando o mouse passa por cima */
 }
 
 .projetos {
