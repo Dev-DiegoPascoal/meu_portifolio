@@ -26,7 +26,7 @@
     </head>
 <body>
     <header class="cabecalho">
-        <a href="#" >
+    <a href="#" >
             <h1 class="logo"><img src="/src/imagens/logo_diegopascoal_branca.png" alt=""></h1>
         </a>
 
@@ -186,6 +186,17 @@
         </button>
     </section>
     <script src="./src/JS/index.js"></script>
+    <!-- <footer class="footer">
+        <div class="footer-content">
+            <p>Desenvolvido por: Diego Pascoal</p>
+            <p>https://github.com/Dev-DiegoPascoal</p>
+            <p>https://www.linkedin.com/in/diegoappascoal/</p>
+            <p>Versão: 1.0.0</p>
+            <p id="date-time"></p>
+        </div>
+    </footer> -->
+    <script src="./src/JS/data-hora.js"></script>
+    <?php include './footer.php'; ?>
 </body>
 </html>
 
