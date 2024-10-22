@@ -18,6 +18,13 @@
         align-items: center;
     }
 
+    .home .historia{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        max-width: 87%;
+    }
+
     .projetos .container-projetos{
         padding: 0 30px;
     }
@@ -25,20 +32,36 @@
        padding-top: auto;
        margin-bottom: auto;
     }
+    
 }
 
 @media(max-width: 425px) {
+
     .home .informacoes h1{
         font-size: 30px;
+    }
+
+    .home .historia{
+        max-width: 50%;
     }
 
     .home .informacoes p{
         font-size: 16px;
     }
 
+    .home .historia p{
+        font-size: 16px;
+        max-width: 0%;
+    }
+
     .home .container-foto img{
         margin-top: 5px;
         max-width: 320px;
+    }
+
+    .historia .container-foto1 img{
+        margin-top: 5px;
+        margin-right: 550px;
     }
 
     .projetos{
