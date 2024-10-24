@@ -38,3 +38,32 @@ function esconderBotao() {
     botaoMostrarProjetos.classList.add('remover');
 }
 
+const botaoSubir = document.querySelector('.btn-subir');
+// Armazena a última posição do scroll
+let ultimoScroll = 0; 
+
+// Adiciona um event listener para o evento de scroll
+window.addEventListener('scroll', () => {
+    // Posição atual do scroll
+    const scrollAtual = window.scrollY; 
+
+    if (scrollAtual > ultimoScroll) {
+        //Rola para cima
+        botaoSubir.classList.remove('remover'); 
+    } else {
+        // Rola para baixo
+        botaoSubir.classList.add('remover'); 
+    }
+    // Atualiza a última posição do scroll
+    ultimoScroll = scrollAtual; 
+});
+
+// Adiciona um evento de clique para rolar suavemente para o topo
+botaoSubir.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
