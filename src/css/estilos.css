@@ -243,6 +243,38 @@ body {
 .projetos .btn-mostrar-projetos.remover {
     display: none;
 }
+
+.projetos .btn-subir {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0; /* Remover margens para evitar deslocamentos indesejados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed; /* Muda para fixed para permanecer na tela durante o scroll */
+    right: 20px; /* Distância da borda direita */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o botão para que fique centralizado em relação ao seu próprio tamanho */
+    z-index: 1000; /* Certifique-se de que o botão esteja acima de outros elementos */
+}
+
+
+.projetos .btn-subir:hover {
+    background-color: #9443d8;
+    transition: 0.5s;
+}
+
+.projetos .btn-subir.remover {
+    display: none;
+}
+
 .footer {
     position: fixed;
     left: 0;
