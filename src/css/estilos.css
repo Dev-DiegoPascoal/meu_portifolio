@@ -20,7 +20,6 @@ body {
 .cabecalho .logo {
     width: 240px;
     height: 80px;
-    /* border-radius: 50%; */
     border: 2.5px solid #fff;
     text-decoration: underline;
     text-align: center;
@@ -29,12 +28,9 @@ body {
 }
 
 .cabecalho a:hover .logo {
-    color: #9443d8;
-    border: 2.8px solid #9443d8;
-    transition: 0.5s;
+    border: 2.8px solid #f8f8f8;
+    transition: 0.9s;
 }
-
-
 
 .cabecalho .menu li a {
     font-size: 20px;
@@ -110,7 +106,6 @@ body {
 
 .home .redes-sociais a i {
     border: 1 px solid #fff;
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -120,8 +115,7 @@ body {
 
 .home .redes-sociais a i:hover {
     color: #9443d8;
-    border: 1px solid #9443d8;
-    transform: scale(1.1);
+    
 }
 
 .home .container-foto .foto {
@@ -236,7 +230,7 @@ body {
 }
 
 .projetos .btn-mostrar-projetos:hover {
-    background-color: #9443d8;
+    background-color: #5c66f3;
     transition: 0.5s;
 }
 
@@ -253,21 +247,21 @@ body {
     padding: 20px;
     font-size: 18px;
     font-weight: 600;
-    margin: 0; /* Remover margens para evitar deslocamentos indesejados */
+    margin: 0; 
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    position: fixed; /* Muda para fixed para permanecer na tela durante o scroll */
-    right: 20px; /* Distância da borda direita */
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta o botão para que fique centralizado em relação ao seu próprio tamanho */
-    z-index: 1000; /* Certifique-se de que o botão esteja acima de outros elementos */
+    position: fixed; 
+    right: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1000; 
 }
 
 
 .projetos .btn-subir:hover {
-    background-color: #9443d8;
+    background-color: #5c66f3;
     transition: 0.5s;
 }
 
