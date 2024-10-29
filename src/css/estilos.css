@@ -151,6 +151,19 @@ body {
     transform: scale(1.02); 
 }
 
+.container-foto .foto1-minha-historia { 
+    width: 380px; 
+    height: auto; 
+    margin-top: 2px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 1.9s;
+}
+
 .projetos {
     padding: 70px 0 70px;
 }
