@@ -7,7 +7,7 @@ body {
     font-family: "Poppins", Sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: linear-gradient(to top, #000, #c6bdce, #92809e, #624870, #000000);
+    background: #624870;
 }
 
 .cabecalho {
@@ -370,6 +370,8 @@ body {
 
 .tab-content {
     padding: 40px;
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-top: none;
     display: none;
     margin-bottom: 5px;
