@@ -168,6 +168,10 @@ body {
     transition: transform 1.9s;
 }
 
+.minha-formacao h1 {
+align-items: center !important;
+}
+
 .container-foto .foto2-minha-formacao { 
     width: 800px; 
     height: auto; 
