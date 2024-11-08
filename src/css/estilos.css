@@ -64,7 +64,7 @@ body {
 
 .home .informacoes h1 {
     font-family: "Haleway", sans-serif;
-    font-size: 45px;
+    font-size: 38px;
     margin-bottom: 24px;
 }
 
@@ -102,6 +102,8 @@ body {
 .home .redes-sociais {
     display: flex;
     gap: 20px;
+    justify-content: center; 
+    align-items: center;
 }
 
 .home .redes-sociais a i {
