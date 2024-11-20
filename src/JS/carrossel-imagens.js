@@ -1,31 +1,54 @@
 const carousel = document.querySelector('.carousel-inner');
 const images = document.querySelectorAll('.carousel-inner img');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
 
-let index = 0;
+// Duplicar imagens no início e no final
+const imagesHTML = [...images].map(img => img.outerHTML).join('');
+carousel.innerHTML = imagesHTML + carousel.innerHTML + imagesHTML;
 
-// Função para exibir a imagem com base no índice
+// Selecionar todas as imagens (incluindo as duplicadas)
+const allImages = document.querySelectorAll('.carousel-inner img');
+const totalImages = allImages.length;
+const visibleImages = images.length;
+
+let index = visibleImages; // Começa na posição inicial (primeiro conjunto real)
+carousel.style.transform = `translateX(-${index * 100}%)`;
+
+// Função para exibir a imagem
 function showImage(idx) {
+  carousel.style.transition = 'transform 0.5s ease-in-out'; // Adiciona a transição
   const offset = -idx * 100; // Calcula o deslocamento
   carousel.style.transform = `translateX(${offset}%)`;
 }
 
 // Avançar para a próxima imagem
 function nextImage() {
-  index = (index < images.length - 1) ? index + 1 : 0; // Loop para a primeira imagem
+  index++;
   showImage(index);
+
+  // Caso atinja o final duplicado, reposiciona para o início real
+  if (index === totalImages - visibleImages) {
+    setTimeout(() => {
+      carousel.style.transition = 'none'; // Remove a transição
+      index = visibleImages; // Reposiciona para o início real
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }, 500); // Aguarda a transição terminar
+  }
 }
 
 // Retroceder para a imagem anterior
 function prevImage() {
-  index = (index > 0) ? index - 1 : images.length - 1; // Loop para a última imagem
+  index--;
   showImage(index);
-}
 
-// Evento nos botões
-nextButton.addEventListener('click', nextImage);
-prevButton.addEventListener('click', prevImage);
+  // Caso atinja o início duplicado, reposiciona para o final real
+  if (index === 0) {
+    setTimeout(() => {
+      carousel.style.transition = 'none'; // Remove a transição
+      index = totalImages - visibleImages * 2; // Reposiciona para o final real
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }, 500); // Aguarda a transição terminar
+  }
+}
 
 // Troca automática de imagens a cada 3 segundos
 let autoSlide = setInterval(nextImage, 3000);
