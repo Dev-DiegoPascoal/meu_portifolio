@@ -2,7 +2,13 @@
 @media(max-width:1280px) {
 
     .cabecalho {
-        padding: 30px;
+        padding: 15px; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .menu{
+        margin-top: 30px;
     }
 
     .home{
