@@ -64,6 +64,23 @@
 
 @media(max-width: 425px) {
 
+    .cabecalho {
+        padding: 1px; 
+        flex-direction:column; 
+        align-items: center; ; 
+    }
+
+    .cabecalho .menu ul li a{
+        flex-direction:unset;
+        font-size: 19px;
+        align-items:end;
+        display:inline-table;
+        margin: 0 auto;    }
+
+    .home{
+        margin-top: 35px;
+    }
+
     .home .informacoes h1{
         font-size: 30px;
     }
