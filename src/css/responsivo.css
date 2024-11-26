@@ -64,6 +64,14 @@
 
 @media(max-width: 425px) {
 
+    body {
+        font-family: "Poppins", Sans-serif;
+        margin: 0 25px;
+        max-width: 1120px;
+        background: #624870;
+    }
+    
+
     .cabecalho {
         padding: 1px; 
         flex-direction:column; 
