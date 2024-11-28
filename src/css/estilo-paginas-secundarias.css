@@ -348,6 +348,10 @@ body {
     display: none;
 }
 
+.tab-buttons{
+    margin: auto;
+}
+
 
 /* ------------------Carrossel de imaens ínicio---------------------------- */
 .carousel-container {
@@ -439,6 +443,12 @@ body {
 
 .tab-content.active {
     display: block;
+}
+
+.tab-buttons{
+    margin: 0 80px;
+    display: flex;
+    
 }
 
 .footer {

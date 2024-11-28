@@ -59,6 +59,10 @@
         max-width: 87%;
     }
 
+    .minha-formacao h1 {
+        font-size: 35px;
+    }
+
     .projetos .container-projetos{
         padding: 0 30px;
     }
@@ -66,6 +70,19 @@
        padding-top: auto;
        margin-bottom: auto;
     }
+
+    .tab-buttons {
+        flex-direction:row; 
+        text-align:center;
+        width:fit-content;
+        margin: 0 auto;
+    }
+
+    .tab-link {
+        font-size: 14px; 
+    }
+
+
     
 }
 
@@ -123,7 +140,26 @@
         margin-right: 50px;
     }
 
+    .minha-formacao h1 {
+        font-size: 28px;
+    }
+
     .projetos{
     padding: 30px;
+    }
+
+    .tab-buttons {
+        flex-direction: column; 
+        align-items:center;
+        text-align:center;
+        width:fit-content;
+        margin: 0 30px 30px;
+        min-height:min-content;
+       
+    }
+
+    .tab-link {
+        font-size: 14px; 
+        min-width: 1px;
     }
 }
