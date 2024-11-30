@@ -72,21 +72,19 @@
     }
 
     .tab-buttons {
-        flex-direction: column; 
+        flex-wrap: wrap;
         align-items: center;
-        text-align: center;
-        width: fit-content;
-        margin: 0 30px 30px;
-        min-height: min-content;
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction:row; 
+        text-align:center;
+        width:fit-content;
+        margin: 0 auto;
     }
-    
     .tab-link {
-        font-size: 1555px; 
-        text-align: center;
-        
-    }
-
-    
+        font-size: 14px; 
+        width: 70%;
+    } 
 }
 
 @media(max-width: 425px) {
