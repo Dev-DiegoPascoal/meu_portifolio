@@ -81,6 +81,12 @@
         width:fit-content;
         margin: 0 auto;
     }
+
+    .tab-content h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
     .tab-link {
         font-size: 14px; 
         width: 70%;
