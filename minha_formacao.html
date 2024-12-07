@@ -70,6 +70,13 @@
             <p>Versão: 1.0.0</p>
             <p id="date-time"></p>
         </div>
+        <script>
+            window.onload = function() {
+              let zoomLevel = localStorage.getItem('zoomLevel') || 1; 
+              document.body.style.zoom = zoomLevel;
+              localStorage.setItem('zoomLevel', 1); 
+            };
+          </script>
         <script src="./src/JS/menu-abas.js"></script>
     </footer>
 </body>
