@@ -206,12 +206,11 @@ body {
   
 
 .minha-formacao{
-    display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
     gap: 50px;
-    margin-top: 90px;
+    margin-top: 10px;
     border: 3px solid transparent; 
     border-radius: 15px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.4);
