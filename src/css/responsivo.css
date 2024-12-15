@@ -128,8 +128,13 @@
     }
 
     .minha-formacao h1 {
-        font-size: 35px;
+        font-size: 33px;
     }
+
+    .home .historia h1 {
+        font-size: 33px;
+    }
+
 
     .projetos .container-projetos{
         padding: 0 30px;
