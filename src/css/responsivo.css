@@ -52,6 +52,7 @@
         padding: 15px; 
         flex-direction: column; 
         align-items: center; 
+        
     }
 
     .carousel {
@@ -190,7 +191,16 @@
     .cabecalho {
         padding: 1px; 
         flex-direction:column; 
-        align-items: center; ; 
+        align-items: center; 
+       
+    }
+
+    .cabecalho .menu {
+        flex-direction: column; 
+        width: 100%;
+        justify-content: center; 
+        
+        
     }
 
     .cabecalho .menu ul li a{
@@ -198,7 +208,11 @@
         font-size: 19px;
         align-items:end;
         display:inline-table;
-        margin: 0 auto;    }
+        margin: 0 auto;
+        flex-wrap: wrap; /* Permite os itens quebrarem em linhas em telas menores */
+        justify-content: center;
+        
+    }
 
     .home{
         margin-top: 35px;
