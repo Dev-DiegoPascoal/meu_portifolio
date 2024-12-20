@@ -145,7 +145,7 @@
 
     .home .historia p{
         font-size: 18px;
-        margin: auto;
+        margin: 30px
     }
 
     .minha-formacao .tab-content p {
@@ -156,11 +156,10 @@
         max-width: 100%;
     }
 
-
-
     .projetos .container-projetos{
         padding: 0 30px;
     }
+
     .home .container-foto{
        padding-top: auto;
        margin-bottom: auto;
