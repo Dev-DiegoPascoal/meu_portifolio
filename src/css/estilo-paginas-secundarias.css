@@ -424,19 +424,25 @@ body {
 }
 
 .tab-link {
-    background-color: #f1f1f1;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: none;
-    padding: 20px 40px;
+    background-color: #efe9ee; 
+    font-size: 18px; 
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 15px 30px; 
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    display: flex; 
+    justify-content: center;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .tab-link.active, .tab-link:hover {
-    background-color: #555;
-    color: white;
+    background-color:#5c66f3; 
+    color: rgb(255, 255, 255); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    transform: scale(1.00); 
 }
 
 .tab-content {
