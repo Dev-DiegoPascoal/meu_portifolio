@@ -10,58 +10,116 @@
     <link rel="stylesheet" href="./src/css/responsivo.css">
     <link rel="icon" type="image/x-icon" href="./src/imagens/logo_diegopascoal.ico">
 </head>
+
+<style>
+    .menu-container {
+        margin-bottom: 20px;
+    }
+    .tab-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .tab-link {
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s;
+    }
+    .tab-link:hover {
+        background-color: #ddd;
+    }
+    .tab-link.active {
+        background-color: #ccc;
+    }
+    .tab-content {
+        display: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+</style>
 <body class="minha-formacao">
     <br><br>
     <div style="display: flex; justify-content: center; text-align: center;">
         <h1>Minha Formação</h1>
     </div>  
-        <div class="tab-container">
+    <div class="tab-container">
+        <div class="menu-container">
             <div class="tab-buttons">
-                <button class="tab-link active" onclick="abrirAba(event, 'aba1')">Serviços Juridícos, Cartorários e Notariais</button>
-                <button class="tab-link" onclick="abrirAba(event, 'aba2')">Análise e Desenvolvimento de Sistemas</button>
-                <button class="tab-link" onclick="abrirAba(event, 'aba3')">Bacharel em Engenharia da Computação</button>
-            </div>
+                <button class="tab-link" onclick="toggleContent('aba1')">Serviços Jurídicos, Cartorários e Notariais</button>
+                <div id="aba1" class="tab-content">
+                    <h3>Faculdade Anhanguera Internacional</h3>
+                    <p>
+                        Período: Fevereiro de 2020 à Dezembro de 2021.<br>
+                        Fiz esta Graduação na Modalidade à Distância durante a Pandemia pois a minha intenção era 
+                        prestar Concursos Públicos na área, mas isso acabou não acontecendo.
+                    </p>
+                    <p>
+                        Neste Curso tive um aprendizado sobre noções em Direitos Cívis, Direito Político e Social, além 
+                        de conteúdos voltados a Registro Natural de Pessoas Cívis.
+                    </p>
+                    <p>Enfim, acabei não seguindo na área e resolvi migrar para Tecnologia.</p>
+                    <div class="container-foto">
+                        <img class="foto1-minha-historia" src="./src/imagens/log-anhanguera.png" alt="Faculdade Anhanguera">
+                    </div>
+                </div>
+                
+                <button class="tab-link" onclick="toggleContent('aba2')">Análise e Desenvolvimento de Sistemas</button>
+                <div id="aba2" class="tab-content">
+                    <h3>Faculdade de Tecnologia de Araçatuba - FATEC</h3>
+                    <p>
+                        Período: Agosto de 2021 à Junho de 2024.<br>
+                        Nesta Graduação aprendi desde toda a parte de arquitetura de Computadores, redes, lógica de 
+                        Programação, Análise de Sistemas, Programação WEB e de Dispositivos Móveis, além de noções 
+                        Engenharia de Software.
+                    </p>
+                    <div class="container-foto">
+                        <img class="foto2-minha-formacao" src="./src/imagens/turma-ads.jpg" alt="FATEC Araçatuba">
+                    </div>
+                </div>
     
-            <div id="aba1" class="tab-content">
-                <h3>Faculdade Anhanguera Internacional</h3>
-                <p>Período: Fevereiro de 2020 à Dezembro de 2021.
-                    Fiz esta Graduação na Modalidade à Distância durante a Pandemia pois a minha intenção era 
-                    prestar Concursos Públicos na área, mas isso acabou não acontecendo.
-                    Neste Curso tive um aprendizado sobre noções em Direitos Cívis, Direito Político e Social, além 
-                    de muitos contéudos voltados a Registro Natural de Pessoas Cívis.
-
-                    Enfim acabei não seguindo na área e resolvi migrar para Tecnologia.
-                </p>
-                <br>
-                <div class="container-foto">
-                    <img class="foto1-minha-historia" src="./src/imagens/log-anhanguera.png" alt="Foto de Perfil de Diego Pascoal">
-                </div>  
-            </div>
-    
-            <div id="aba2" class="tab-content" style="display: none;">
-                <h3>Faculdade de Tecnologia de Araçatuba - FATEC</h3>
-                <p>Périodo: Agosto de 2021 à Junho de 2024.
-                    Nesta Graduação aprendi desde toda a parte de arquitera de Computadores, redes, Lógica de 
-                    Programação, Análise de Sistemas, Programação WEB e de Dispositivos Móveis, além de noções 
-                    Engenharia de Software.
-                </p>
-                <div class="container-foto">
-                    <img class="foto2-minha-formacao" src="./src/imagens/turma-ads.jpg" alt="Foto de Perfil de Diego Pascoal">
-                </div>  
-            </div>
-    
-            <div id="aba3" class="tab-content" style="display: none;">
-                <h3>Univesp - Universidade Virtual de São Paulo</h3>
-                <p>Atualmente, estou cursando Bacharelado em Engenharia da Computação pela UNIVESP (Universidade Virtual de São Paulo) 
-                    e estou concluindo o primeiro período. Nessa graduação, estou me aprofundando nos fundamentos da Engenharia de Software 
-                    e Computação, essenciais para o desenvolvimento de tecnologias modernas. 
-                </p>
-                <div class="container-foto">
-                    <img class="foto2-minha-formacao" src="./src/imagens/turma-univesp.jpg" alt="Foto de Perfil de Diego Pascoal">
-                </div> 
+                <button class="tab-link" onclick="toggleContent('aba3')">Bacharel em Engenharia da Computação</button>
+                <div id="aba3" class="tab-content">
+                    <h3>Univesp - Universidade Virtual de São Paulo</h3>
+                    <p>
+                        Atualmente, estou cursando Bacharelado em Engenharia da Computação pela UNIVESP (Universidade Virtual de São Paulo) 
+                        e estou concluindo o primeiro período. Nessa graduação, estou me aprofundando nos fundamentos da Engenharia de Software 
+                        e Computação, essenciais para o desenvolvimento de tecnologias modernas.
+                    </p>
+                    <div class="container-foto">
+                        <img class="foto2-minha-formacao" src="./src/imagens/turma-univesp.jpg" alt="UNIVESP">
+                    </div>
+                </div>
             </div>
         </div>
-          
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const allTabs = document.querySelectorAll('.tab-content');
+            const allButtons = document.querySelectorAll('.tab-link');
+            
+            allTabs.forEach(tab => {
+                if (tab.id === id) {
+                    tab.style.display = tab.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    tab.style.display = 'none';
+                }
+            });
+    
+            allButtons.forEach(button => {
+                if (button.getAttribute('onclick').includes(id)) {
+                    button.classList.toggle('active', document.getElementById(id).style.display === 'block');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+        }
+    </script>
+    
     <footer class="footer">
         <div class="footer-content">
             <p>Desenvolvido por: <img src="src/imagens/logo_diegopascoal_branca_pequeno.png" alt=""></p>
