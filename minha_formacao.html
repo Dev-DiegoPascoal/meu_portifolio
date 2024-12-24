@@ -14,23 +14,25 @@
 <body class="minha-formacao">
     <br><br>
     <div style="display: flex; justify-content: center; text-align: center;">
-        <h1>Minha Formação</h1>
-    </div>  
+        <h1>Minha Formação</h1><br>
+    </div> 
+    <!-- <div style="display: flex; justify-content: center; text-align: center;">
+        <h2>Ensino Médio</h2>
+    </div>  -->
+    
     <div class="tab-container">
         <div class="menu-container">
             <div class="tab-buttons">
-                <button class="tab-link" onclick="toggleContent('aba1')">Serviços Jurídicos, Cartorários e Notariais</button>
+                <button class="tab-link" onclick="toggleContent('aba1')">Ensino Médio</button>
                 <div id="aba1" class="tab-content">
-                    <h3>Faculdade Anhanguera Internacional</h3>
+                    <h3>Escola Estadual Altina Moraes Sampaio</h3>
                     <p>
-                        Período: Fevereiro de 2020 à Dezembro de 2021.<br>
-                        Realizei esta graduação à distância durante a pandemia com o objetivo de prestar concursos 
-                        públicos na área, mas acabei não seguindo esse caminho. Durante o curso, adquiri conhecimentos
-                        em Direito Civil, Político e Social, além de conteúdos sobre Registro Civil. Posteriormente,
-                         decidi migrar para a área de Tecnologia.
-                    <div class="container-foto">
-                        <img class="foto1-minha-formacao" src="./src/imagens/log-anhanguera.png" alt="Faculdade Anhanguera">
-                    </div>
+                        Estudei nesta escola durante o 1° Ano do Ensino Médio. <br>
+                        Ano de 2006.
+                <h3 style="margin-left: 270px; margin-top: 25px;">Escola Estadual Vitor Antônio Trindade</h3>
+                    <p style="margin-left: 270px; margin-top: 25px";>
+                        Estudei nesta escola durante o 1° Ano do Ensino Médio. <br>
+                        Anos de 2007 e 2008.
                 </div>
                 
                 <button class="tab-link" onclick="toggleContent('aba2')">Análise e Desenvolvimento de Sistemas</button>
@@ -62,6 +64,53 @@
             </div>
         </div>
     </div>
+
+        <div class="tab-container">
+            <div class="menu-container">
+                <div class="tab-buttons">
+                    <button class="tab-link" onclick="toggleContent('aba4')">Serviços Jurídicos, Cartorários e Notariais</button>
+                    <div id="aba1" class="tab-content">
+                        <h3>Faculdade Anhanguera Internacional</h3>
+                        <p>
+                            Período: Fevereiro de 2020 à Dezembro de 2021.<br>
+                            Realizei esta graduação à distância durante a pandemia com o objetivo de prestar concursos 
+                            públicos na área, mas acabei não seguindo esse caminho. Durante o curso, adquiri conhecimentos
+                            em Direito Civil, Político e Social, além de conteúdos sobre Registro Civil. Posteriormente,
+                            decidi migrar para a área de Tecnologia.
+                        <div class="container-foto">
+                            <img class="foto1-minha-formacao" src="./src/imagens/log-anhanguera.png" alt="Faculdade Anhanguera">
+                        </div>
+                    </div>
+                    
+                    <button class="tab-link" onclick="toggleContent('aba5')">Análise e Desenvolvimento de Sistemas</button>
+                    <div id="aba2" class="tab-content">
+                        <h3>Faculdade de Tecnologia de Araçatuba - FATEC</h3>
+                        <p>
+                            Período: Agosto de 2021 à Junho de 2024.<br>
+                            Nesta Graduação aprendi desde toda a parte de arquitetura de Computadores, redes, lógica de 
+                            Programação, Análise de Sistemas, Programação WEB e de Dispositivos Móveis, além de noções 
+                            Engenharia de Software.
+                        </p>
+                        <div class="container-foto">
+                            <img class="foto2-minha-formacao" src="./src/imagens/turma-ads.jpg" alt="FATEC Araçatuba">
+                        </div>
+                    </div>
+        
+                    <button class="tab-link" onclick="toggleContent('aba6')">Bacharel em Engenharia da Computação</button>
+                    <div id="aba3" class="tab-content">
+                        <h3>Univesp - Universidade Virtual de São Paulo</h3>
+                        <p>
+                            Atualmente, estou cursando Bacharelado em Engenharia da Computação pela UNIVESP (Universidade Virtual de São Paulo) 
+                            e estou concluindo o primeiro período. Nessa graduação, estou me aprofundando nos fundamentos da Engenharia de Software 
+                            e Computação, essenciais para o desenvolvimento de tecnologias modernas.
+                        </p>
+                        <div class="container-foto">
+                            <img class="foto2-minha-formacao" src="./src/imagens/turma-univesp.jpg" alt="UNIVESP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>
         function toggleContent(id) {
