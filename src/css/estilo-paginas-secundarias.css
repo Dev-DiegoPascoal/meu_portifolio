@@ -370,7 +370,12 @@ body {
 
 .tab-buttons{
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+    display: flex;
 }
+
 
 
 /* ------------------Carrossel de imaens ínicio---------------------------- */
@@ -425,11 +430,6 @@ body {
         margin-bottom: 20px;
     }
 
-.tab-buttons {
-        display: flex;
-        flex-direction: column;
-}
-
 .tab-link {
     background-color: #efe9ee; 
     font-size: 18px; 
@@ -463,12 +463,6 @@ body {
 
 .tab-content.active {
     display: block;
-}
-
-.tab-buttons{
-    margin: 0 80px;
-    display: flex;
-    
 }
 
 .footer {

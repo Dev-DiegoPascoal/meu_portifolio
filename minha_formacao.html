@@ -11,6 +11,41 @@
     <link rel="icon" type="image/x-icon" href="./src/imagens/logo_diegopascoal.ico">
 </head>
 
+<style>
+   .menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu li {
+    margin: 5px 0;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+.menu a:hover {
+    background-color: #ddd;
+}
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+.open > .submenu {
+    display: block;
+}
+
+</style>
+
 <body class="minha-formacao">
     <br><br>
     <div style="display: flex; justify-content: center; text-align: center;">
@@ -53,55 +88,116 @@
             </div>
         </div>
     </div>
-    <div class="tab-container">
+    <!-- <div class="tab-container">
         <div class="menu-container">
             <div class="tab-buttons">
                 <button class="tab-link" onclick="toggleContent('aba7')">Graduações</button>
-                <div id="aba7" class="tab-content">  
+            </div>
+    
+           
+            <div id="aba7" class="tab-content">
+            
+                <div class="tab-buttons">
                     <button class="tab-link" onclick="toggleContent('aba3')">Serviços Jurídicos, Cartorários e Notariais</button>
-                    <div id="aba3" class="tab-content">
-                        <h3>Faculdade Anhanguera Internacional</h3>
-                        <p>
-                            Período: Fevereiro de 2020 à Dezembro de 2021.<br>
-                            Realizei esta graduação à distância durante a pandemia com o objetivo de prestar concursos 
-                            públicos na área, mas acabei não seguindo esse caminho. Durante o curso, adquiri conhecimentos
-                            em Direito Civil, Político e Social, além de conteúdos sobre Registro Civil. Posteriormente,
-                            decidi migrar para a área de Tecnologia.
-                        <div class="container-foto">
-                            <img class="foto1-minha-formacao" src="./src/imagens/log-anhanguera.png" alt="Faculdade Anhanguera">
-                        </div>
+                </div>
+                <div id="aba3" class="tab-content">
+                    <h3>Faculdade Anhanguera Internacional</h3>
+                    <p>
+                        Período: Fevereiro de 2020 à Dezembro de 2021.<br>
+                        Realizei esta graduação à distância durante a pandemia com o objetivo de prestar concursos 
+                        públicos na área, mas acabei não seguindo esse caminho. Durante o curso, adquiri conhecimentos
+                        em Direito Civil, Político e Social, além de conteúdos sobre Registro Civil. Posteriormente,
+                        decidi migrar para a área de Tecnologia.
+                    </p>
+                    <div class="container-foto">
+                        <img class="foto1-minha-formacao" src="./src/imagens/log-anhanguera.png" alt="Faculdade Anhanguera">
                     </div>
+                </div>
+    
+               
+                <div class="tab-buttons">
                     <button class="tab-link" onclick="toggleContent('aba5')">Análise e Desenvolvimento de Sistemas</button>
-                    <div id="aba5" class="tab-content">
-                        <h3>Faculdade de Tecnologia de Araçatuba - FATEC</h3>
-                        <p>
-                            Período: Agosto de 2021 à Junho de 2024.<br>
-                            Nesta Graduação aprendi desde toda a parte de arquitetura de Computadores, redes, lógica de 
-                            Programação, Análise de Sistemas, Programação WEB e de Dispositivos Móveis, além de noções 
-                            Engenharia de Software.
-                        </p>
-                        <div class="container-foto">
-                            <img class="foto2-minha-formacao" src="./src/imagens/turma-ads.jpg" alt="FATEC Araçatuba">
-                        </div>
+                </div>
+                <div id="aba5" class="tab-content">
+                    <h3>Faculdade de Tecnologia de Araçatuba - FATEC</h3>
+                    <p>
+                        Período: Agosto de 2021 à Junho de 2024.<br>
+                        Nesta Graduação aprendi desde toda a parte de arquitetura de Computadores, redes, lógica de 
+                        Programação, Análise de Sistemas, Programação WEB e de Dispositivos Móveis, além de noções 
+                        Engenharia de Software.
+                    </p>
+                    <div class="container-foto">
+                        <img class="foto2-minha-formacao" src="./src/imagens/turma-ads.jpg" alt="FATEC Araçatuba">
                     </div>
-        
+                </div>
+    
+             
+                <div class="tab-buttons">
                     <button class="tab-link" onclick="toggleContent('aba6')">Bacharel em Engenharia da Computação</button>
-                    <div id="aba6" class="tab-content">
-                        <h3>Univesp - Universidade Virtual de São Paulo</h3>
-                        <p>
-                            Atualmente, estou cursando Bacharelado em Engenharia da Computação pela UNIVESP (Universidade Virtual de São Paulo) 
-                            e estou concluindo o primeiro período. Nessa graduação, estou me aprofundando nos fundamentos da Engenharia de Software 
-                            e Computação, essenciais para o desenvolvimento de tecnologias modernas.
-                        </p>
-                        <div class="container-foto">
-                            <img class="foto2-minha-formacao" src="./src/imagens/turma-univesp.jpg" alt="UNIVESP">
-                        </div></div>
+                </div>
+                <div id="aba6" class="tab-content">
+                    <h3>Univesp - Universidade Virtual de São Paulo</h3>
+                    <p>
+                        Atualmente, estou cursando Bacharelado em Engenharia da Computação pela UNIVESP (Universidade Virtual de São Paulo) 
+                        e estou concluindo o primeiro período. Nessa graduação, estou me aprofundando nos fundamentos da Engenharia de Software 
+                        e Computação, essenciais para o desenvolvimento de tecnologias modernas.
+                    </p>
+                    <div class="container-foto">
+                        <img class="foto2-minha-formacao" src="./src/imagens/turma-univesp.jpg" alt="UNIVESP">
+                    </div>
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="tab-container">
+        <div class="menu-container">
+            <div class="tab-buttons">
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="toggle">Graduações</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" class="toggle">Serviços Jurídicos, Cartorários e Notariais</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <h3>Faculdade Anhanguera Internacional</h3>
+                                        <p>
+                                            Período: Fevereiro de 2020 à Dezembro de 2021.<br>
+                                            Realizei esta graduação à distância durante a pandemia com o objetivo de prestar concursos 
+                                            públicos na área, mas acabei não seguindo esse caminho. Durante o curso, adquiri conhecimentos
+                                            em Direito Civil, Político e Social, além de conteúdos sobre Registro Civil. Posteriormente,
+                                            decidi migrar para a área de Tecnologia.
+                                        </p>
+                                        <div class="container-foto">
+                                            <img class="foto1-minha-formacao" src="./src/imagens/log-anhanguera.png" alt="Faculdade Anhanguera">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="toggle">Análise e Desenvolvimento de Sistemas</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <h3>Faculdade de Tecnologia de Araçatuba - FATEC</h3>
+                                <p>
+                                    Período: Agosto de 2021 à Junho de 2024.<br>
+                                    Nesta Graduação aprendi desde toda a parte de arquitetura de Computadores, redes, lógica de 
+                                    Programação, Análise de Sistemas, Programação WEB e de Dispositivos Móveis, além de noções 
+                                    Engenharia de Software.
+                                </p>
+                                <div class="container-foto">
+                                    <img class="foto2-minha-formacao" src="./src/imagens/turma-ads.jpg" alt="FATEC Araçatuba">
+                                </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-   
-
+                
     <script>
         function toggleContent(id) {
             const allTabs = document.querySelectorAll('.tab-content');
@@ -123,6 +219,28 @@
                 }
             });
         }
+        
+    </script>
+
+    <script>
+    document.querySelectorAll('.menu .toggle').forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const parent = this.parentElement;
+
+            const siblings = parent.parentElement.querySelectorAll(':scope > li');
+            siblings.forEach(sibling => {
+                if (sibling !== parent) {
+                    sibling.classList.remove('open');
+                    const nestedSubmenus = sibling.querySelectorAll('.submenu');
+                    nestedSubmenus.forEach(submenu => submenu.parentElement.classList.remove('open'));
+                }
+            });
+
+            parent.classList.toggle('open');
+        });
+    });
     </script>
     
     <footer class="footer">
