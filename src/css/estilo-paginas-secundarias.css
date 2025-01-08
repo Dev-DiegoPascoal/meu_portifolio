@@ -426,6 +426,54 @@ body {
 /* ------------------Carrossel de imaens FÍM---------------------------- */
 
 
+
+/*CSS menu colapse - página Minha Formação */
+.menu {
+    font-size: 18px; 
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu li {
+    margin: 5px 0;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+.menu a:hover {
+    background-color:#5c66f3; 
+    color: rgb(255, 255, 255); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    transform: scale(1.00); 
+}
+.submenu {
+    list-style: none;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(237, 236, 238, 0.15); 
+    transform: scale(1.00); 
+    margin-bottom: 25px;
+    border: 2px solid #98a1ec; /* Adiciona uma borda vermelha */
+}
+
+.open > .submenu {
+    display: block;
+    
+}
+/*CSS menu colapse - página Minha Formação  FIM*/
+
+
+
+
 .menu-container {
         margin-bottom: 20px;
     }
