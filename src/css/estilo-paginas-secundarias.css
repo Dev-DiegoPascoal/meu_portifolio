@@ -465,13 +465,14 @@ body {
 }
 
 .open > .submenu {
-    display: block; 
+    display: block;
 }
-
+    
 .open > .submenu h3  {
     margin-top: 35px;
 }
 /*CSS menu colapse - página Minha Formação  FIM*/
+
 
 
 

@@ -117,6 +117,12 @@
     </div>
                 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Esconder todas as abas ao carregar a página
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+        });
         function toggleContent(id) {
             const allTabs = document.querySelectorAll('.tab-content');
             const allButtons = document.querySelectorAll('.tab-link');
@@ -138,29 +144,25 @@
             });
         }
         
-    </script>
+        document.querySelectorAll('.menu .toggle').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
 
-    <script>
-    document.querySelectorAll('.menu .toggle').forEach(item => {
-        item.addEventListener('click', function (e) {
-            e.preventDefault();
+                const parent = this.parentElement;
 
-            const parent = this.parentElement;
+                const siblings = parent.parentElement.querySelectorAll(':scope > li');
+                siblings.forEach(sibling => {
+                    if (sibling !== parent) {
+                        sibling.classList.remove('open');
+                        const nestedSubmenus = sibling.querySelectorAll('.submenu');
+                        nestedSubmenus.forEach(submenu => submenu.parentElement.classList.remove('open'));
+                    }
+                });
 
-            const siblings = parent.parentElement.querySelectorAll(':scope > li');
-            siblings.forEach(sibling => {
-                if (sibling !== parent) {
-                    sibling.classList.remove('open');
-                    const nestedSubmenus = sibling.querySelectorAll('.submenu');
-                    nestedSubmenus.forEach(submenu => submenu.parentElement.classList.remove('open'));
-                }
+                parent.classList.toggle('open');
             });
-
-            parent.classList.toggle('open');
         });
-    });
     </script>
-    
     <footer class="footer">
         <div class="footer-content">
             <p>Desenvolvido por: <img src="src/imagens/logo_diegopascoal_branca_pequeno.png" alt=""></p>
