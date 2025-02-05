@@ -165,7 +165,7 @@
        margin-bottom: auto;
     }
 
-    .tab-buttons {
+    /* .tab-buttons {
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
@@ -174,7 +174,18 @@
         text-align:center;
         width:fit-content;
         margin: 0 auto;
+    } */
+
+    .tab-buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
+        justify-content: center; /* Centraliza os botões */
+        gap: 5px; /* Adiciona um espaçamento entre os botões */
+        margin: 0;
+        padding: auto;
     }
+
 
     .tab-content h3 {
         font-size: 22px;
