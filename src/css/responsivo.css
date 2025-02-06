@@ -165,28 +165,19 @@
        margin-bottom: auto;
     }
 
-    /* .tab-buttons {
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
-        box-sizing: border-box;
-        flex-direction:row; 
-        text-align:center;
-        width:fit-content;
-        margin: 0 auto;
-    } */
+    
 
-    .tab-buttons {
+     .tab-buttons {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
-        justify-content: center; /* Centraliza os botões */
-        gap: 5px; /* Adiciona um espaçamento entre os botões */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; 
+        gap: 5px;
         margin: 0;
-        padding: auto;
-    }
-
-
+        padding: 0; 
+    }  
+  
     .tab-content h3 {
         font-size: 22px;
         margin-bottom: 20px;
@@ -300,6 +291,7 @@
         margin: 0 30px 30px;
         min-height:min-content;
     }
+
 
     .tab-link {
         font-size: 14px; 
