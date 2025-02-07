@@ -165,17 +165,30 @@
        margin-bottom: auto;
     }
 
-    
 
-     .tab-buttons {
+      .tab-container .menu-container .tab-buttons .tab-link {
+        display: flex;
+        flex-direction: row;
+        margin:auto;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center; 
+        gap: 5px; 
+      
+    }   
+
+    .tab-container p{
+        font-size: 8px;
+        margin-left: 50px;
+        text-align:justify;
+    }
+
+    .tab-container .toggle {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center; 
-        gap: 5px;
-        margin: 0;
-        padding: 0; 
     }  
   
     .tab-content h3 {
