@@ -165,22 +165,10 @@
        margin-bottom: auto;
     }
 
-
-      .tab-container .menu-container .tab-buttons .tab-link {
-        display: flex;
-        flex-direction: row;
-        margin:auto;
-        font-size: 15px;
-        justify-content: center;
-        align-items: center; 
-        gap: 5px; 
-      
-    }   
-
     .tab-container p{
-        font-size: 8px;
-        margin-left: 50px;
-        text-align:justify;
+        font-size: 15px;
+       text-align: center;
+       margin:auto
     }
 
     .tab-container .toggle {

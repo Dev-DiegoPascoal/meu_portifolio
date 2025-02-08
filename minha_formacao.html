@@ -21,34 +21,70 @@
     <div class="tab-container">
         <div class="menu-container">
             <div class="tab-buttons">
-                <button class="tab-link" onclick="toggleContent('aba1')">Ensino Médio</button>
-                <div id="aba1" class="tab-content">
-                    <h4>Escola Estadual Altina Moraes Sampaio</h4>
-                    <p>
-                        Estudei nesta escola durante o 1° Ano do Ensino Médio. <br>
-                        Ano de 2006.
-                    <h4 style="margin-left: 270px; margin-top: 25px;">Escola Estadual Vitor Antônio Trindade</h4>
-                    <p style="margin-left: 270px; margin-top: 25px" ;>
-                        Estudei nesta escola durante o 1° Ano do Ensino Médio. <br>
-                        Anos de 2007 e 2008.
-                </div>
-
-                <button class="tab-link" onclick="toggleContent('aba2')">Cursos e Certificações</button>
-                <div id="aba2" class="tab-content">
-                    <h4>Programação em Python - SENAI-SP</h4>
-                    <p>
-                        Período: Julho a Novembro 2024<br>
-                        Conceitos de Lógica de Programação, elaboração de algorítimos para resolução de problemas,
-                        configuração de ambiente para desenvolvimento de jogos 2D utilizando PyGames.
-                    </p><br>
-                    <h4 style="margin-left: 250px; margin-top: 25px;">HTML5 - CSS3 - JavasScript Curso em Video</h4>
-                    <p style="margin-left: 250px; margin-top: 5px" ;>
-                        Ano de 2022<br>
-                        Estudei as estruturas das Páginas WEB, conceitos de Organização e estilização WEB, bem como
-                        conhecimentos
-                        na Linguagem JavasScript. Estou atualmente no meio do Módulo 3 de 5.
-                    </p>
-                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="toggle">Ensino Médio</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" class="toggle">Escola Estadual Altina Moraes Sampaio</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <p>
+                                            Estudei nesta escola durante o 1° Ano do Ensino Médio. <br>
+                                            Ano de 2006.
+                                        <h4 style="margin-left: 270px; margin-top: 25px;"></h4>
+                                        <p style="margin-left: 270px; margin-top: 25px" ;>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="toggle">Escola Estadual Vitor Antônio Trindade</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <p>
+                                            Estudei nesta escola durante o 1° Ano do Ensino Médio. <br>
+                                            Anos de 2007 e 2008.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle">Cursos e Certificações</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#" class="toggle">Programação em Python - SENAI-SP</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <p>
+                                            Período: Julho a Novembro 2024<br>
+                                            Conceitos de Lógica de Programação, elaboração de algorítimos para resolução
+                                            de problemas,
+                                            configuração de ambiente para desenvolvimento de jogos 2D utilizando
+                                            PyGames.
+                                        <h4 style="margin-left: 270px; margin-top: 25px;"></h4>
+                                        <p style="margin-left: 270px; margin-top: 25px" ;>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="toggle">HTML5 - CSS3 - JavasScript Curso em Video</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <p>
+                                            Ano de 2022<br>
+                                            Estudei as estruturas das Páginas WEB, conceitos de Organização e
+                                            estilização WEB, bem como
+                                            conhecimentos
+                                            na Linguagem JavasScript. Estou atualmente no meio do Módulo 3 de 5.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -176,7 +212,7 @@
         });
 
 
-        
+
 
 
     </script>
