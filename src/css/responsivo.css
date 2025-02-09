@@ -104,10 +104,6 @@
         align-content:space-around;
     }
 
-    .menu{
-        margin-top: 30px;
-    }
-
     .home{
         flex-direction: column;
         align-items: center;
@@ -136,7 +132,7 @@
     }
 
     .minha-formacao h1 {
-        font-size: 33px;
+        font-size: 25px;
     }
 
     .home .historia h1 {
@@ -177,6 +173,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center; 
+        font-size: 15px;
     }  
   
     .tab-content h3 {
