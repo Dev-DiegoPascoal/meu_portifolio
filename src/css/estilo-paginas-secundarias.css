@@ -460,7 +460,7 @@ body {
     box-shadow: 0 4px 8px rgba(237, 236, 238, 0.15); 
     transform: scale(1.00); 
     margin-bottom: 25px;
-    border: 2px solid #98a1ec; 
+    /* border: 2px solid #98a1ec;  */
     margin-left: 20px;
     margin-right: 20px;
     }
