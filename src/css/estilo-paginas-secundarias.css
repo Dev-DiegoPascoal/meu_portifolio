@@ -162,6 +162,7 @@ body {
     border: #000;
     max-width: 80%;
     margin: auto;
+    margin-bottom: 45px;
 }
 
 .container-foto .foto1-minha-historia { 
@@ -517,6 +518,18 @@ body {
 .toggle{
     margin-bottom: 11px;
     /* margin: 0px -20px; */
+}
+.submenu p{
+    text-align: justify;
+    margin: 0 35px 0px 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.submenu h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration:overline;
 }
 
 .footer {
