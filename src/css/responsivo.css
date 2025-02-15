@@ -179,6 +179,13 @@
     .submenu{
         margin-left: 20px;
         margin-right: 20px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .submenu p{
+        font-size: 13px;
+        margin-top: 10px;
     }
   
     .tab-content h3 {
