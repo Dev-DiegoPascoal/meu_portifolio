@@ -44,6 +44,18 @@ body {
     color: #fff;
     border-radius: 50px;
 }
+.contatos .redes-sociais{
+    margin: 0px;
+}
+
+.home .contatos{
+    align-items: center; 
+    gap: 50px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 2px;
+
+}
 
 .home {
     display: flex;
