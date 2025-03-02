@@ -44,6 +44,7 @@ body {
     color: #fff;
     border-radius: 50px;
 }
+
 .contatos .redes-sociais{
     margin: 0px;
 }
@@ -67,12 +68,21 @@ body {
     margin: 0;
     margin-top: 55px;
     text-align: center;
-    background-color: red;
 }
 
 .minha-formacao .meus-contatos .redes-sociais li { 
     display: inline-block; 
     margin: 0 10px; 
+}
+
+
+.minha-formacao .meus-contatos .redes-sociais a:hover { 
+    display: inline-block; 
+    transition: color 0.5s ease-in-out;
+    font-weight: 500; /* Torna a fonte um pouco mais destacada */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transform: scale(1.1);
+    color: #9443d8;
 }
 
 .minha-formacao .meus-contatos .redes-sociais a {
