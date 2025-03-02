@@ -67,7 +67,21 @@ body {
     margin: 0;
     margin-top: 55px;
     text-align: center;
-    background-color: red;
+}
+
+.minha-formacao .meus-contatos .redes-sociais a {
+    display: inline-block; /* Garante que o elemento tenha apenas o tamanho do conteúdo */
+    padding: 10px 15px; /* Ajusta o tamanho do botão */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.minha-formacao .meus-contatos .redes-sociais a:hover {
+    background: #9443d8;
+    color: #fff;
+    transform: scale(1.05); /* Aumenta apenas 5%, mantendo o tamanho proporcional */
 }
 
 .minha-formacao .meus-contatos .redes-sociais li { 
