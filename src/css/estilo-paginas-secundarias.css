@@ -44,6 +44,7 @@ body {
     color: #fff;
     border-radius: 50px;
 }
+
 .contatos .redes-sociais{
     margin: 0px;
 }
@@ -69,24 +70,19 @@ body {
     text-align: center;
 }
 
-.minha-formacao .meus-contatos .redes-sociais a {
-    display: inline-block; /* Garante que o elemento tenha apenas o tamanho do conteúdo */
-    padding: 10px 15px; /* Ajusta o tamanho do botão */
-    text-align: center;
-    text-decoration: none;
-    border-radius: 100px;
-    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.minha-formacao .meus-contatos .redes-sociais a:hover {
-    background: #9443d8;
-    color: #fff;
-    transform: scale(1.05); /* Aumenta apenas 5%, mantendo o tamanho proporcional */
-}
-
 .minha-formacao .meus-contatos .redes-sociais li { 
     display: inline-block; 
     margin: 0 10px; 
+}
+
+
+.minha-formacao .meus-contatos .redes-sociais a:hover { 
+    display: inline-block; 
+    transition: color 0.5s ease-in-out;
+    font-weight: 500; /* Torna a fonte um pouco mais destacada */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transform: scale(1.1);
+    color: #9443d8;
 }
 
 .minha-formacao .meus-contatos .redes-sociais a {
