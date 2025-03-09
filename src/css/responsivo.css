@@ -52,7 +52,17 @@
         padding: 15px; 
         flex-direction: column; 
         align-items: center; 
-        
+    }
+
+    .cabecalho .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 80px;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto; 
     }
 
     .carousel {
