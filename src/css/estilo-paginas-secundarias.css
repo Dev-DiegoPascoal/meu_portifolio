@@ -511,7 +511,6 @@ body {
     margin-right: 20px;
     }
 
-
 .open > .submenu {
     display: block;
 }
@@ -565,6 +564,7 @@ body {
     margin-bottom: 11px;
     /* margin: 0px -20px; */
 }
+
 .submenu p{
     text-align: justify;
     margin: 0 35px 0px 35px;
