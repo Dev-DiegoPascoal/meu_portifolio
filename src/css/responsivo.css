@@ -77,8 +77,12 @@
         justify-content: center;
         align-items: center;
     }
-    
 
+    .home .container-foto .foto {
+        max-width: 230px;
+        border-radius: 50%;
+    }
+    
     /*ajuste no footer para página pequenas*/
     .footer {
         position: fixed;
