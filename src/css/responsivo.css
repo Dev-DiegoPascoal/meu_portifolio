@@ -188,6 +188,11 @@
        margin-bottom: auto;
     }
 
+    .tab-buttons {
+        margin: 0 30px;
+        min-height:min-content;
+    }
+
     .tab-container p{
         font-size: 15px;
        text-align: center;
@@ -204,8 +209,8 @@
     } 
     
     .submenu{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
         font-size: 11px;
         text-align: center;
     }
