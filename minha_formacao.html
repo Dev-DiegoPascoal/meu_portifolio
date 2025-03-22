@@ -23,10 +23,10 @@
             <div class="tab-buttons">
                 <ul class="menu">
                     <li>
-                        <a href="#" class="toggle">Ensino Médio</a>
+                        <a href="#" class="toggle">Ensino Médio <span class="arrow">▶</span></a>
                         <ul class="submenu">
                             <li>
-                                <a href="#" class="toggle">Escola Estadual Altina Moraes Sampaio</a>
+                                <a href="#" class="toggle">Escola Estadual Altina Moraes Sampaio<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                         <p>
@@ -37,7 +37,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="toggle">Escola Estadual Vitor Antônio Trindade</a>
+                                <a href="#" class="toggle">Escola Estadual Vitor Antônio Trindade<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                         <p>
@@ -50,10 +50,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="toggle">Cursos e Certificações</a>
+                        <a href="#" class="toggle">Cursos e Certificações<span class="arrow">▶</span></a>
                         <ul class="submenu">
                             <li>
-                                <a href="#" class="toggle">Programação em Python - SENAI-SP</a>
+                                <a href="#" class="toggle">Programação em Python - SENAI-SP<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                             <h4>Período: Julho a Novembro 2024</h4>
@@ -67,7 +67,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="toggle">HTML5 - CSS3 - JavasScript Curso em Video</a>
+                                <a href="#" class="toggle">HTML5 - CSS3 - JavasScript Curso em Video<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                             <h4>Ano de 2022</h4>
@@ -81,7 +81,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="toggle">Analista Genexus Junior 18</a>
+                                <a href="#" class="toggle">Analista Genexus Junior 18<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                         
@@ -95,7 +95,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="toggle">Inglês Nivel C1</a>
+                                <a href="#" class="toggle">Inglês Nivel C1<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                         <h4>Abril 2024 - até o momento</h4>
@@ -111,20 +111,14 @@
                             </li>
                         </ul>
                     </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+              
 
-    <div class="tab-container">
-        <div class="menu-container">
-            <div class="tab-buttons">
-                <ul class="menu">
+    
                     <li>
-                        <a href="#" class="toggle">Graduações</a>
+                        <a href="#" class="toggle">Graduações<span class="arrow">▶</span></a>
                         <ul class="submenu">
                             <li>
-                                <a href="#" class="toggle">Serviços Jurídicos, Cartorários e Notariais</a>
+                                <a href="#" class="toggle">Serviços Jurídicos, Cartorários e Notariais<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                         <h3>Faculdade Anhanguera Internacional</h3>
@@ -146,7 +140,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="toggle">Análise e Desenvolvimento de Sistemas</a>
+                                <a href="#" class="toggle">Análise e Desenvolvimento de Sistemas<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                         <h3>Faculdade de Tecnologia de Araçatuba - FATEC</h3>
@@ -166,7 +160,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" class="toggle">Bacharel em Engenharia da Computação</a>
+                                <a href="#" class="toggle">Bacharel em Engenharia da Computação<span class="arrow">▶</span></a>
                                 <ul class="submenu">
                                     <li>
                                         <h3>Univesp - Universidade Virtual de São Paulo</h3><br>
@@ -191,6 +185,7 @@
             </div>
         </div>
     </div>
+    <script src="./src/JS/menu-abas.js"></script>
 
     <div class="logo-back">
         <img src="./src/imagens/logo_diegopascoal_branca.png" alt="Logo">
@@ -220,55 +215,8 @@
             <p>Versão: 1.2.0</p>
         </div>
     </footer>
+
+    <script src="./src/JS/setas-colapses.js"></script>
     <script src="./src/JS/data-hora.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Esconder todas as abas ao carregar a página
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.style.display = 'none';
-            });
-        });
-        function toggleContent(id) {
-            const allTabs = document.querySelectorAll('.tab-content');
-            const allButtons = document.querySelectorAll('.tab-link');
-
-            allTabs.forEach(tab => {
-                if (tab.id === id) {
-                    tab.style.display = tab.style.display === 'block' ? 'none' : 'block';
-                } else {
-                    tab.style.display = 'none';
-                }
-            });
-
-            allButtons.forEach(button => {
-                if (button.getAttribute('onclick').includes(id)) {
-                    button.classList.toggle('active', document.getElementById(id).style.display === 'block');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-        }
-
-        document.querySelectorAll('.menu .toggle').forEach(item => {
-            item.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const parent = this.parentElement;
-
-                const siblings = parent.parentElement.querySelectorAll(':scope > li');
-                siblings.forEach(sibling => {
-                    if (sibling !== parent) {
-                        sibling.classList.remove('open');
-                        const nestedSubmenus = sibling.querySelectorAll('.submenu');
-                        nestedSubmenus.forEach(submenu => submenu.parentElement.classList.remove('open'));
-                    }
-                });
-
-                parent.classList.toggle('open');
-            });
-        });
-    </script>
-    <?php include 'footer.php'; ?> 
-    <script src="./src/JS/menu-abas.js"></script>
 </body>
 </html>
