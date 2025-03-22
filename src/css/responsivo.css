@@ -148,14 +148,13 @@
         max-width: 100%;
         text-align: center;
         align-items: center;
-        max-width: 87%;
+        max-width: 90%;
     }
 
     .minha-formacao {
         max-width: 100%;
         text-align: center;
         align-items: center;
-        max-width: 87%;
     }
 
     .minha-formacao h1 {
@@ -167,8 +166,12 @@
     }
 
     .home .historia p{
+        max-width: 100%;
         font-size: 18px;
-        margin: 30px
+        margin-left: 1px;
+        margin-right: 1px;
+        text-align:justify;
+        align-items: center;
     }
 
     .minha-formacao .tab-content p {
