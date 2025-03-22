@@ -1,20 +1,54 @@
-function abrirAba(event, abaId) {
-    // Esconde todo o conteúdo das abas
-    let tabContent = document.getElementsByClassName("tab-content");
-    for (let i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
+document.addEventListener("DOMContentLoaded", function () {
+    // Esconde todas as abas ao carregar a página
+    document.querySelectorAll(".tab-content").forEach((tab) => {
+        tab.style.display = "none";
+    });
+});
+
+function toggleContent(id) {
+    const selectedTab = document.getElementById(id);
+    const allTabs = document.querySelectorAll(".tab-content");
+    const allButtons = document.querySelectorAll(".tab-link");
+
+    // Fecha todas as abas
+    allTabs.forEach((tab) => {
+        tab.style.display = "none";
+    });
+
+    // Se a aba não estiver aberta, abre ela
+    if (selectedTab.style.display !== "block") {
+        selectedTab.style.display = "block";
     }
 
-    // Remove a classe 'active' de todas as abas
-    let tabLinks = document.getElementsByClassName("tab-link");
-    for (let i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-    }
-
-    // Mostra o conteúdo da aba clicada e adiciona a classe 'active' ao botão
-    document.getElementById(abaId).style.display = "block";
-    event.currentTarget.classList.add("active");
+    // Atualiza os botões ativos
+    allButtons.forEach((button) => {
+        if (button.getAttribute("onclick").includes(id)) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+            arrow.style.color = "black";  // Altera a cor da seta para preta
+        }
+    });
 }
 
-// Exibe a primeira aba por padrão
-document.getElementsByClassName("tab-content")[0].style.display = "block";
+// Menu Toggle para submenus (caso tenha menus dropdown)
+document.querySelectorAll(".menu .toggle").forEach((item) => {
+    item.addEventListener("click", function (e) {
+        e.preventDefault();
+        const parent = this.parentElement;
+
+        // Fecha todos os outros submenus antes de abrir o novo
+        parent.parentElement.querySelectorAll(":scope > li").forEach((sibling) => {
+            if (sibling !== parent) {
+                sibling.classList.remove("open");
+                sibling.querySelectorAll(".submenu").forEach((submenu) => submenu.parentElement.classList.remove("open"));
+            }
+        });
+
+        // Alterna o submenu clicado
+        parent.classList.toggle("open");
+    });
+});
+
+
+

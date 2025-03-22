@@ -513,6 +513,31 @@ body {
     border-radius: 5px;
     color: #333;
 }
+
+/* Inicio Ajuste do botão seta menu colapse*/
+.arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    right: 10px; 
+}
+
+.toggle {
+    position: relative; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding-right: 25px; 
+}
+
+.toggle.open .arrow {
+    transform: rotate(45°); 
+    justify-items: end;
+    color: rgb(13, 85, 218);
+}
+/*fim do Ajuste do botão seta menu colapse*/
+
 .menu a:hover {
     background-color:#5c66f3; 
     color: rgb(255, 255, 255); 
@@ -525,7 +550,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(237, 236, 238, 0.15); 
     transform: scale(1.00); 
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
     }
@@ -537,11 +562,11 @@ body {
 .open > .submenu h3  {
     margin-top: 35px;
 }
+
+
 /*CSS menu colapse - página Minha Formação  FIM*/
-
-
 .menu-container {
-        margin-bottom: 2px;
+        margin-bottom: 100px;
     }
 
 .tab-link {
