@@ -252,6 +252,10 @@
         text-align: center;
         font-size: 25px;
     }
+
+    .logo-back{
+        width: 75%;
+    }
 }
 
 @media(max-width: 425px) {
