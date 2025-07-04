@@ -59,6 +59,7 @@
         align-items: center; 
     }
 
+
     .cabecalho .menu {
         display: flex;
         align-items: center;
@@ -293,7 +294,6 @@
         justify-content: center;
         
     }
-
 
     .home{
         margin-top: 35px;
