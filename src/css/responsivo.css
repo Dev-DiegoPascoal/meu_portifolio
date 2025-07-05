@@ -6,12 +6,12 @@
 
 @media(max-width:1280px) {
 
-    body {
-        font-family: "Poppins", Sans-serif;
-        margin: 0 30px;
-        max-width: 1120px;
-        background: #624870;
-    }
+ body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
 
     .projetos .btn-subir {
         background: none;
@@ -74,11 +74,9 @@
     .carousel {
         position: relative;
         height: 300px;
-        max-width: 420px;
+        max-width: 850px;
         margin: 40px auto;
         overflow: hidden;
-        border: 2px solid #ccc;
-        border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -168,7 +166,7 @@
 
     .home .historia p{
         max-width: 100%;
-        font-size: 18px;
+        font-size: 21px;
         margin-left: 1px;
         margin-right: 1px;
         text-align:justify;
