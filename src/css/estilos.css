@@ -73,8 +73,8 @@ body {
   overflow-x: auto;
   margin-top: 30px;
   padding: 10px 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  /* border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; */
 }
 
 
@@ -345,30 +345,65 @@ body {
 }
 
 
-/* ------------------Carrossel de imaens ínicio---------------------------- */
-.carousel-wrapper {
+/* ------------------Carrossel de imagens ínicio---------------------------- */
+.carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
   width: 100%;
+  margin-bottom: 50px;
   overflow: hidden;
 }
 
-.carousel {
-  display: flex;
-  width: 100%;
-  transition: transform 0.5s ease;
-}
-
-.carousel img {
-  flex: 1 0 25%;        
-  height: 200px;         
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 250px; /* Tamanho fixo para manter consistência, ajuste se necessário */
   transition: transform 0.3s ease;
 }
 
-.carousel img:hover {
-  transform: scale(1.05);
+.img-container img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+.legenda {
+  position: absolute;
+  margin-top: 80px;
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza */
+  background: rgba(0, 0, 0, 0.6);   /* Fundo escuro semi-transparente */
+  padding: 10px 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Evita que interfira no clique */
+}
+
+
+.img-container:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.img-container:hover .legenda {
+  opacity: 1;
+}
+
+/* ------------------FIM - Carrossel de imagens ínicio---------------------------- */
 
 .slide {
     min-width: 100%;
