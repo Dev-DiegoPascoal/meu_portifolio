@@ -57,6 +57,7 @@
         padding: 15px; 
         flex-direction: column; 
         align-items: center; 
+        
     }
 
 
@@ -124,12 +125,12 @@
 
 
     .home .container-foto .foto {
-        max-width: 230px;
+        max-width: 210px;
         border-radius: 50%;
+        
     }
 
    
-
     .home{
         flex-direction: column;
         align-items: center;
@@ -141,6 +142,18 @@
         max-width: 100%;
         text-align: center;
         align-items: center;
+        margin-top: 120px;
+    }
+
+    
+    .home .informacoes h1{
+       font-size: 21px;
+    }
+
+     .home .informacoes p{
+       font-size: 18px;
+       text-align: center;
+       margin: auto 30px;
     }
 
     .home .historia{
@@ -298,7 +311,8 @@
     }
 
     .home .informacoes h1{
-        font-size: 30px;
+        margin-top: 50px;
+        font-size: 22;
     }
 
     .home .historia{
