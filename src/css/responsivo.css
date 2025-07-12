@@ -60,6 +60,11 @@
         
     }
 
+   .cabecalho .logo img {
+    width: 195px;
+    height: auto; /* mantém a proporção */
+}
+
 
     .cabecalho .menu {
         display: flex;
