@@ -1,16 +1,25 @@
 @media(min-width:1281px) {
     .footer-mobile {
-        display: none; /* Esconder o footer mobile em telas grandes */
+        display: none; 
     }
+
 }
 
 @media(max-width:1280px) {
 
- body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-}
+        body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        }
+
+        .container {
+        width: 100%;
+        max-width: 1380px;
+        margin: 0;
+        
+        box-sizing: border-box;
+        }
 
 
     .projetos .btn-subir {
@@ -62,7 +71,7 @@
 
    .cabecalho .logo img {
     width: 195px;
-    height: auto; /* mantém a proporção */
+    height: auto; 
 }
 
 
@@ -72,9 +81,20 @@
         justify-content: center;
         width: 100%;
         min-width: 80px;
-        margin-top: 50px;
+        margin-top: 15px;
         margin-right: auto;
         margin-left: auto; 
+    }
+
+    
+    .cabecalho .menu ul li a{
+        flex-direction:unset;
+        font-size: 17px;
+        align-items:end;
+        display:inline-table;
+        margin: 0 auto;
+        flex-wrap: wrap; 
+        justify-content: center;
     }
 
     .carousel {
@@ -86,6 +106,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+ 
+
+    .carrosel-imagens-historia .img-container {
+    width: 22%;
+    height:170px;             
+    overflow: hidden;         
+    justify-content: center;
+    align-items: center;
     }
     
 
@@ -130,7 +160,7 @@
 
 
     .home .container-foto .foto {
-        max-width: 210px;
+        max-width: 150px;
         border-radius: 50%;
         
     }
@@ -147,26 +177,46 @@
         max-width: 100%;
         text-align: center;
         align-items: center;
-        margin-top: 120px;
+        /* margin-top: 120px; */
+        margin-bottom: 2px;
     }
 
     
     .home .informacoes h1{
        font-size: 21px;
+       margin-bottom: 5px;
     }
 
      .home .informacoes p{
-       font-size: 18px;
+       font-size: 20px;
        text-align: center;
-       margin: auto 30px;
+       margin: auto 50px;
+       margin-bottom: 5px;
+       
     }
 
-    .home .historia{
-        max-width: 100%;
-        text-align: center;
-        align-items: center;
-        max-width: 90%;
+
+
+
+
+    .home .historia h1 {
+        font-size: 33px;
     }
+
+    .home .historia p{
+        max-width: 100%;
+        font-size: 19px;
+        text-align:center;
+        align-items: center;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+
+
+
+
+   
 
     .minha-formacao {
         max-width: 100%;
@@ -178,18 +228,7 @@
         font-size: 25px;
     }
 
-    .home .historia h1 {
-        font-size: 33px;
-    }
-
-    .home .historia p{
-        max-width: 100%;
-        font-size: 21px;
-        margin-left: 1px;
-        margin-right: 1px;
-        text-align:justify;
-        align-items: center;
-    }
+    
 
     .minha-formacao .tab-content p {
         font-size: 18px;
@@ -275,14 +314,44 @@
     }
 }
 
-@media(max-width: 425px) {
 
-    body {
-        font-family: "Poppins", Sans-serif;
-        margin: 0 25px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media(max-width: 425px) {
+
+        body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            
+        }
+
+        .container {
+        width: 100%;
         max-width: 1120px;
-        background: #624870;
-    }
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+        }
+
     
 
     .cabecalho {
@@ -306,9 +375,8 @@
         align-items:end;
         display:inline-table;
         margin: 0 auto;
-        flex-wrap: wrap; /* Permite os itens quebrarem em linhas em telas menores */
+        flex-wrap: wrap; 
         justify-content: center;
-        
     }
 
     .home{
@@ -317,20 +385,40 @@
 
     .home .informacoes h1{
         margin-top: 50px;
-        font-size: 22;
+        font-size: 22px;
     }
 
-    .home .historia{
-        max-width: 450px;
+   .home .informacoes{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 120px;
     }
 
-    .home .informacoes p{
-        font-size: 16px;
+
+
+
+
+
+    
+
+     .home .historia{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        max-width: 90%;
     }
 
-    .home .historia p{
-        font-size: 16px;
-        max-width: 80%;
+
+    .home .historia h1{
+       font-size: 19px;
+       margin-top: 750px;
+    }
+
+     .home .historia p{
+       font-size: 14px;
+       text-align:center;
+     
     }
 
     .home .container-foto img{
