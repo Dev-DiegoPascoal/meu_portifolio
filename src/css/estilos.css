@@ -93,20 +93,22 @@ body {
     gap: 15px;
     letter-spacing: 2px;
     padding: 0 15px;
-    max-width: 35%;
-    margin-bottom: 100px;
+    max-width: 50%;
+    margin-bottom: 150px;
 }
 
 .home .informacoes h1 {
     font-family: "Haleway", sans-serif;
-    font-size: 38px;
-    margin-bottom: 24px;
+    font-size: 39px;
+    margin-bottom: 45px;
+    text-align: center;
 }
 
 .home .informacoes p {
     font-family: "Haleway", sans-serif;
-    font-size: 24px;
+    font-size: 29px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .home {
@@ -128,6 +130,9 @@ body {
   text-align: justify;
 }
 
+
+
+
 .home .historia {
     padding: 0 5px 0; 
     text-align: justify;
@@ -136,7 +141,7 @@ body {
 
 .home .historia h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 45px;
+    font-size: 42px;
     margin-bottom: 24px;
     margin-top: 25px;
     text-align: center; 
@@ -144,12 +149,13 @@ body {
 
 .home .historia p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 29px;
+    font-size: 26px;
     letter-spacing: 1.2px;
     padding: 0 2px;
     text-indent: 80px; 
     line-height: 1.6;
     margin-bottom: 35px;
+    text-align: center;
 }
 
 .home .redes-sociais {
