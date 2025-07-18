@@ -624,6 +624,7 @@ body {
   width: 4px;
   height: 100%;
   background: #ffffff44;
+  
 }
 
 .timeline-item {
@@ -633,6 +634,7 @@ body {
   transform: translateY(30px);
   animation: fadeInUp 0.8s forwards;
   animation-delay: calc(var(--i) * 0.2s);
+
 }
 
 .timeline-dot {
@@ -644,11 +646,13 @@ body {
   left: -6px;
   top: 5px;
   z-index: 10;
+  
 }
 
 .timeline-content {
   background: #1c2a35;
   padding: 20px;
+  flex-direction: column;
   border-radius: 10px;
   margin-left: 40px;
   box-shadow: 0 0 10px #00000055;
