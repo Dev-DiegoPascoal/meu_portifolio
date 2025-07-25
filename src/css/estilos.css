@@ -268,11 +268,31 @@ body {
   transition: transform 1.9s;
 }
 
-.meus-contatos li a{
-  background-color: red;
-    display: inline-block;
-    margin: 0 22px;
+.meus-contatos {
+  display: flex;              
+  justify-content: center;   
+  gap: 100px;                
+  list-style: none;           
+  padding: 0;                 
+  margin: 65px 0;             
 }
+
+.meus-contatos li a {
+  text-decoration: none;     
+  color: inherit;             
+}
+
+.meus-contatos i {
+  font-size: 56px;           
+  transition: transform 0.3s; 
+}
+
+.meus-contatos i:hover {
+  transform: scale(1.2);     
+}
+
+
+
 
 .projetos {
   padding: 70px 0 70px;
