@@ -627,16 +627,6 @@ body {
   padding-left: 20px;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 4px;
-  height: 100%;
-  background: #ffffff44;
-}
-
 .timeline-item {
   position: relative;
   margin-bottom: 50px;
@@ -644,17 +634,6 @@ body {
   transform: translateY(30px);
   animation: fadeInUp 0.8s forwards;
   animation-delay: calc(var(--i) * 0.2s);
-}
-
-.timeline-dot {
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: -6px;
-  top: 5px;
-  z-index: 10;
 }
 
 .timeline-content {
