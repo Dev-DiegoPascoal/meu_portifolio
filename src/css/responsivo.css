@@ -308,8 +308,11 @@
         font-size: 25px;
     }
 
-    .logo-back{
-        width: 75%;
+    .timeline {
+    position: relative;
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px 20px;
     }
 }
 
