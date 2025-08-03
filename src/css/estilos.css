@@ -643,7 +643,7 @@ body {
 }
 
 .timeline-content h2 {
-  margin: 0;
+  text-align: center;
   font-size: 25px;
   color: #4850c5;
 }
