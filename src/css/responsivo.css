@@ -14,8 +14,8 @@
   .container {
     width: 100%;
     max-width: 1380px;
-    margin: 0;
-
+    margin: 0 auto;
+    padding: 0 15px;
     box-sizing: border-box;
   }
 
@@ -47,9 +47,6 @@
     color: #fff;
     width: 102px;
     height: 55px;
-    padding: 16px;
-    font-size: 14px;
-    padding: 18px;
     font-size: 15px;
     font-weight: 600;
     margin: 0 auto;
@@ -75,20 +72,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-width: 80px;
     margin-top: 15px;
-    margin-right: auto;
-    margin-left: auto;
   }
 
   .cabecalho .menu ul li a {
-    flex-direction: unset;
     font-size: 17px;
-    align-items: end;
-    display: inline-table;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
   }
 
   .carousel {
@@ -105,7 +94,7 @@
   .carrosel-imagens-historia .img-container {
     width: 22%;
     height: 170px;
-    overflow: hidden;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -145,8 +134,11 @@
     margin: 8px;
   }
 
-  .footer-mobile img {
-    align-content: center;
+  .home {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 35px;
   }
 
   .home .container-foto .foto {
@@ -154,18 +146,11 @@
     border-radius: 50%;
   }
 
-  .home {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
   .home .informacoes {
     max-width: 100%;
     text-align: center;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 2px;
   }
 
   .home .informacoes h1 {
@@ -175,9 +160,8 @@
 
   .home .informacoes p {
     font-size: 18px;
-    text-align:center;
-    margin: auto 5px;
-    margin-bottom: 5px;
+    text-align: center;
+    margin: 0 5px 5px;
   }
 
   .home .historia h1 {
@@ -185,18 +169,14 @@
   }
 
   .home .historia p {
-    max-width: 100%;
     font-size: 19px;
+    margin: 0 35px;
     text-align: center;
-    align-items: center;
-    margin-left: 35px;
-    margin-right: 35px;
   }
 
   .minha-formacao {
     max-width: 100%;
     text-align: center;
-    align-items: center;
   }
 
   .minha-formacao h1 {
@@ -208,55 +188,45 @@
     margin: 2px;
     letter-spacing: 1.2px;
     line-height: 1.6;
-    max-width: 100%;
   }
 
   .projetos .container-projetos {
     padding: 0 30px;
   }
 
-  .home .container-foto {
-    padding-top: auto;
-    margin-bottom: auto;
-  }
-
   .tab-buttons {
     margin: 0 30px;
-    min-height: min-content;
+    text-align: center;
   }
 
   .tab-container p {
     font-size: 15px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .tab-container .toggle {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     font-size: 15px;
   }
 
   .submenu {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
     font-size: 11px;
     text-align: center;
   }
 
   .submenu p {
     font-size: 13px;
-    margin-top: 10px;
-    margin: 0px 10px 5px;
-    text-align: inherit;
+    margin: 5px 10px;
+    text-align: center;
   }
 
   .container-foto .foto1-minha-formacao {
-    max-width: 100%;
-    height: 50%;
+    width: 100%;
+    height: auto;
   }
 
   .tab-content h3 {
@@ -283,29 +253,34 @@
   }
 
   .timeline {
-    position: relative;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 20px;
   }
 }
 
+@media (max-width: 600px) {
+  .meus-contatos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .meus-contatos li a i {
+    font-size: 2rem;
+    transition: transform 0.3s;
+  }
+
+  .meus-contatos li a:hover i {
+    transform: scale(1.2);
+  }
+  
+}
 
 @media (max-width: 430px) {
-  body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
   .cabecalho {
     padding: 1px;
     flex-direction: column;
@@ -319,36 +294,19 @@
   }
 
   .cabecalho .menu ul li a {
-    flex-direction: unset;
     font-size: 19px;
-    align-items: end;
     display: inline-table;
     margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .home {
-    margin-top: 35px;
-  }
-
-  .home .informacoes h1 {
-    margin-top: 50px;
-    font-size: 22px;
   }
 
   .home .informacoes {
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
     margin-top: 120px;
   }
 
   .home .historia {
-    max-width: 100%;
+    width: 90%;
     text-align: center;
-    align-items: center;
-    max-width: 90%;
   }
 
   .home .historia h1 {
@@ -366,69 +324,29 @@
     max-width: 320px;
   }
 
-  .historia .container-foto1 img {
-    margin-top: 5px;
-    margin-right: 50px;
+  .projetos .container-projetos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
   }
 
-  .minha-formacao h1 {
-    font-size: 28px;
-  }
-
-  .projetos {
-    padding: 30px;
-  }
-
-  .projetos .titulo {
-  text-align: center;
-  padding: 60px 0;
-  font-size: 23px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.projetos .container-projetos {
-  display: flex;
-  width: auto;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  justify-content: center;
-  background-color: red;
-}
-
-.projetos .container-projetos .logos-aplicativos{
+  .projetos .container-projetos .logos-aplicativos {
     width: 170px;
-}
-
-.projetos .container-projetos h3{
-    font-size: 10px;
-}
-
-.projetos .container-projetos p{
-    font-size: 10px;
-    padding: auto 5px;
-}
-
-  .tab-content {
-    padding: 2px;
   }
 
-  .tab-content p {
-    font-size: 19px;
-    text-align: justify;
-    text-indent: 41px;
-    line-height: 1.8;
-    padding: 15px;
+  .projetos .container-projetos h3,
+  .projetos .container-projetos p {
+    font-size: 10px;
+    padding: 0 5px;
   }
 
   .tab-buttons {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: fit-content;
-    margin: 0 30px 30px;
-    min-height: min-content;
+    width: 100%;
+    margin: 0 auto 30px;
   }
 
   .tab-link {
