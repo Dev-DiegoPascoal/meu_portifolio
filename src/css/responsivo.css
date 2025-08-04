@@ -290,7 +290,8 @@
   }
 }
 
-@media (max-width: 425px) {
+
+@media (max-width: 430px) {
   body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -393,6 +394,7 @@
   flex-wrap: wrap;
   margin-bottom: 20px;
   justify-content: center;
+  background-color: red;
 }
 
 .projetos .container-projetos .logos-aplicativos{
