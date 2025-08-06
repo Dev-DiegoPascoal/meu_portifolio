@@ -260,6 +260,26 @@
 }
 
 @media (max-width: 600px) {
+
+    .carrosel-imagens-historia .img-container {
+    width: 120px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .home .historia p {
+    font-size: 16px;
+    text-align: center;
+    margin: auto 2em;
+    margin-bottom: 10px;
+  }
+
+  .legenda{
+  font-size: 10px;
+  }
+
   .meus-contatos {
     display: flex;
     justify-content: center;
@@ -277,6 +297,7 @@
   .meus-contatos li a:hover i {
     transform: scale(1.2);
   }
+  
   
 }
 
