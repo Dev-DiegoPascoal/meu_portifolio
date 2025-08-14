@@ -100,7 +100,6 @@ body {
   letter-spacing: 2px;
   padding: 0 15px;
   max-width: 50%;
-  margin-bottom: 150px;
 }
 
 .home .informacoes h1 {
@@ -205,6 +204,7 @@ body {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
 }
 
 .home .redes-sociais a i {
