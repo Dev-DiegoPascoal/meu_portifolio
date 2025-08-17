@@ -266,6 +266,13 @@
 
 @media (max-width: 600px) {
 
+  .cabecalho {
+    padding: 0px;
+  }
+
+  .container{
+    padding: 0px;
+  }
     .carrosel-imagens-historia .img-container {
     width: 120px;
     height: 200px;
@@ -295,6 +302,10 @@
 
   .legenda{
   font-size: 10px;
+  }
+
+  .cabecalho .logo{
+    margin-top: 20px;
   }
 
   .meus-contatos {
