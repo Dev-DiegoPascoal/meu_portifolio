@@ -274,10 +274,21 @@
     padding: 0px;
   }
 
-  .carrosel-imagens-historia .img-container {
+  .carrosel {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start; 
+    gap: 5px;                 
+    flex-wrap: nowrap;       
+    overflow-x: auto;         
+  }
+
+   .carrosel-imagens-historia .img-container {
+    flex: 0 0 auto;   
     width: 120px;
     height: 200px;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -303,10 +314,11 @@
     margin-bottom: 10px;
   }
 
-  .legenda{
-  font-size: 10px;
+   .legenda {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
   }
-
   .cabecalho .logo{
     margin-top: 20px;
   }
@@ -329,7 +341,6 @@
     transform: scale(1.2);
   }
 }
-
 
 
 
