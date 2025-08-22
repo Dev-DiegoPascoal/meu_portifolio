@@ -141,6 +141,10 @@
     margin-top: 35px;
   }
 
+  /* .home .carrosel-imagens-historia{
+    margin: auto 1px;
+  } */
+
   .home .container-foto .foto {
     max-width: 150px;
     border-radius: 50%;
@@ -255,8 +259,8 @@
   .timeline {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
   }
+
 }
 
 
@@ -328,6 +332,10 @@
   .meus-contatos li a:hover i {
     transform: scale(1.2);
   }
+
+  .timeline-content {
+  margin: 19px 10px;
+}
 }
 
 
