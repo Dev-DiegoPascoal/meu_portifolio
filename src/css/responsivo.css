@@ -308,21 +308,21 @@
 
   .home{
     margin-top: 0px;
-    
   }
 
-  .home .historia .texto p{
-    margin: 0px 1px;
-    padding: 0px 1px;
+  .home{
+    margin-top: -135px;
   }
 
-  .home .informacoes{
-    margin-top: 0px;
+  .home .informacoes p{
+    font-size: 16px;
+    line-height: 1.7; 
   }
 
-    .home .informacoes h1{
-    margin-top: 0px;
+  .home .informacoes h1{
+    font-size: 19px;
   }
+
 
     .home .historia p {
     font-size: 16px;
