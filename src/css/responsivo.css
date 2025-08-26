@@ -361,6 +361,10 @@
   .timeline-content {
   margin: 19px 10px;
 }
+
+.timeline-section h2{
+  margin: auto 1px;
+}
 }
 
 
