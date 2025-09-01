@@ -311,6 +311,10 @@ img{
   text-align: center;
 }
 
+.projeto ativo{
+  margin: auto 50px;
+}
+
 .projetos .titulo {
   text-align: center;
   padding: 60px 0;
@@ -319,12 +323,17 @@ img{
   text-transform: uppercase;
 }
 
+.container-projetos
+{
+  margin: auto 250px;
+}
+
 .projetos .container-projetos {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  justify-content: center;
+  justify-content:space-evenly;
 }
 
 .projetos .projeto {
@@ -361,7 +370,6 @@ img{
   font-weight: 600;
   opacity: 0;
   transition: 0.4s;
-  padding: 25px;
 }
 
 .projetos .container-projetos .projeto:hover .informacoes-projeto {
