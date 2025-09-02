@@ -361,6 +361,11 @@
 .timeline-section h2{
   margin: auto 1px;
 }
+
+.projetos .titulo {
+  padding: 2px 5px;
+  margin-bottom: 20px;
+}
 }
 
 
