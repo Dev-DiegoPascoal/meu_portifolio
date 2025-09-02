@@ -323,11 +323,6 @@ img{
   text-transform: uppercase;
 }
 
-.container-projetos
-{
-  margin: auto 250px;
-}
-
 .projetos .container-projetos {
   display: flex;
   gap: 20px;
