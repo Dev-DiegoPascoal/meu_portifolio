@@ -328,7 +328,7 @@ img{
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  justify-content:space-evenly;
+  justify-content: center;
 }
 
 .projetos .projeto {
@@ -340,6 +340,8 @@ img{
 
 .projetos .projeto.ativo {
   display: block;
+  margin: 0 20px;
+
 }
 
 .projetos .projeto img {
