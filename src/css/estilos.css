@@ -208,7 +208,7 @@ body {
   margin-bottom: 0px;
 }
 
-.home .redes-sociais a i {
+.home .redes-sociais li a i {
   border: 1 px solid #fff;
   width: 50px;
   height: 50px;
@@ -230,10 +230,10 @@ body {
   margin-bottom: 0px;
 }
 
-.home .tecnologias-utilizadas a img {
+.home .tecnologias-utilizadas img {
   border: 1 px solid #fff;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   text-align: center;
   font-size: 26px;
   transition: 0.4s;
