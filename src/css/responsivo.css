@@ -1,8 +1,36 @@
-@media (min-width: 1281px) {
+@media (min-width: 1581px) {
   .footer-mobile {
     display: none;
   }
 }
+
+@media (max-width: 1780px)  {
+
+  .home .informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  letter-spacing: 2px;
+  padding: 0 15px;
+  max-width: 100%;
+}
+
+.home .informacoes h1 {
+  font-family: "Haleway", sans-serif;
+  font-size: 32px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.home .informacoes p {
+  font-family: "Haleway", sans-serif;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+}
+
+
 
 @media (max-width: 1280px) {
   body {
@@ -305,6 +333,7 @@
   .container-foto {
   margin: 0px 2px;
   }
+  
 
   .home{
     margin-top: -135px;
@@ -372,6 +401,22 @@
 
 
 
+
+@media (min-width: 701px) and (max-width: 1291px) {
+.home .tecnologias-utilizadas img {
+  border: 1 px solid #fff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 26px;
+  transition: 0.4s;
+}
+}
+
+
+
+
+
 @media (max-width: 430px) {
   
   .cabecalho {
@@ -391,6 +436,10 @@
     display: inline-table;
     margin: 0 auto;
     flex-wrap: wrap;
+  }
+
+    .home{
+    margin-top: 30px;
   }
 
   .home .informacoes {
