@@ -438,11 +438,13 @@
 
 
 @media (max-width: 430px) {
-  
+
   .cabecalho {
     padding: 1px;
     flex-direction: column;
     align-items: center;
+    position: relative;   /* garante que o cabeçalho fique no topo */
+    z-index: 10;          /* evita que outros elementos cubram o menu */
   }
 
   .cabecalho .menu {
@@ -458,29 +460,28 @@
     flex-wrap: wrap;
   }
 
-    .home{
+  .home {
     margin-top: 30px;
   }
 
   .home h2 {
-  margin-bottom: 0px;
-  margin-top: 1px;
-  margin-bottom: 0px;
-  font-size: 19px;
-}
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-size: 19px;
+  }
 
   .home .informacoes {
     margin-top: 60px;
   }
 
-  .home .informacoes .redes-sociais{
+  .home .informacoes .redes-sociais {
     margin-top: 0px;
-      border: 1 px solid #fff;
-      width: 50px;
-      height: 50px;
-      text-align: center;
-      font-size: 26px;
-      transition: 0.4s;
+    border: 1px solid #fff;  /* corrigido */
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 26px;
+    transition: 0.4s;
   }
 
   .home .historia {
@@ -490,7 +491,7 @@
 
   .home .historia h1 {
     font-size: 19px;
-    margin-top: 750px;
+    margin-top: 50px;  /* reduzido para não empurrar o menu */
   }
 
   .home .historia p {
@@ -498,7 +499,7 @@
     text-align: center;
   }
 
-  .home .tecnologias-utilizadas{
+  .home .tecnologias-utilizadas {
     margin-top: 0px;
   }
 
