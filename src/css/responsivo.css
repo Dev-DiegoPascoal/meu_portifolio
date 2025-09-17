@@ -2,6 +2,14 @@
   .footer-mobile {
     display: none;
   }
+
+   .home .informacoes h1{
+    margin-bottom: 1px;
+  }
+    .home .informacoes h2{
+    margin-top: 16px;
+    background-color: red;
+  }
 }
 
 @media (max-width: 1780px)  {
@@ -17,8 +25,8 @@
 
 .home .informacoes h1 {
   font-family: "Haleway", sans-serif;
-  font-size: 32px;
-  margin-bottom: 45px;
+  font-size: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -28,6 +36,58 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
+  .home .historia h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .home .informacoes h2{
+    margin-top: 6px;
+  }
+
+  .home .historia p {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .home .container-foto img {
+    margin-top: 5px;
+    max-width: 250px;
+  }
+
+  .projetos .titulo{
+    font-size: 29px;
+  }
+
+  .projetos .container-projetos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .projetos .container-projetos .logos-aplicativos {
+    width: 170px;
+  }
+
+  .projetos .container-projetos h3,
+  .projetos .container-projetos p {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .tab-link {
+    font-size: 14px;
+  }
 }
 
 
@@ -184,6 +244,7 @@
     align-items: center;
     margin-top: 30px;
   }
+     
 
   .home .informacoes h1 {
     font-size: 21px;
@@ -288,7 +349,6 @@
     max-width: 800px;
     margin: 0 auto;
   }
-
 }
 
 
@@ -411,6 +471,15 @@
   font-size: 26px;
   transition: 0.4s;
 }
+
+
+  .home .informacoes h1{
+    margin-top: 85px;
+  }
+
+  .home .informacoes h2{
+    margin-top: 6px;
+  }
 }
 
 
@@ -431,10 +500,10 @@
     margin-top: 90px;
   }
 
-  .home .informacoes h1{
-    margin-top: 72px;
+  /* .home .informacoes h1{
+    margin-top: 15px;
     background-color: red;
-  }
+  } */
 }
 
 
