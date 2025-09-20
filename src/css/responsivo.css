@@ -1,3 +1,5 @@
+
+
 @media (min-width: 1581px) {
   .footer-mobile {
     display: none;
@@ -36,60 +38,58 @@
   text-align: center;
 }
 
-  .home .historia h1 {
-    font-size: 30px;
-    margin-top: 10px;
-  }
-
-  .home .informacoes h2{
-    margin-top: 6px;
-  }
-
-  .home .historia p {
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .home .container-foto img {
-    margin-top: 5px;
-    max-width: 250px;
-  }
-
-  .projetos .titulo{
-    font-size: 29px;
-  }
-
-  .projetos .container-projetos {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
-
-  .projetos .container-projetos .logos-aplicativos {
-    width: 170px;
-  }
-
-  .projetos .container-projetos h3,
-  .projetos .container-projetos p {
-    font-size: 14px;
-    padding: 0 5px;
-  }
-
-  .tab-buttons {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto 30px;
-  }
-
-  .tab-link {
-    font-size: 14px;
-  }
+.home .historia h1 {
+  font-size: 30px;
+  margin-top: 10px;
 }
 
+.home .informacoes h2{
+  margin-top: 6px;
+}
 
+.home .historia p {
+  font-size: 20px;
+  text-align: center;
+}
+  
+.home .container-foto img {
+  margin-top: 5px;
+  max-width: 250px;
+}
+
+.projetos .titulo{
+  font-size: 29px;
+}
+
+.projetos .container-projetos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.projetos .container-projetos .logos-aplicativos {
+  width: 170px;
+}
+
+.projetos .container-projetos h3,
+.projetos .container-projetos p {
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.tab-buttons {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 30px;
+}
+
+.tab-link {
+  font-size: 14px;
+}
+}
 
 @media (max-width: 1280px) {
   body {
@@ -228,10 +228,6 @@
     margin-top: -135px;
   }
 
-  /* .home .carrosel-imagens-historia{
-    margin: auto 1px;
-  } */
-
   .home .container-foto .foto {
     max-width: 150px;
     border-radius: 50%;
@@ -244,7 +240,6 @@
     margin-top: 30px;
   }
      
-
   .home .informacoes h1 {
     font-size: 21px;
     margin-bottom: 5px;
@@ -353,8 +348,6 @@
 
 
 
-
-
 @media (max-width: 600px) {
   
 .cabecalho {
@@ -393,7 +386,6 @@
   margin: 0px 2px;
   }
   
-
   .home{
     margin-top: -135px;
   }
@@ -406,7 +398,6 @@
   .home .informacoes h1{
     font-size: 19px;
   }
-
 
     .home .historia p {
     font-size: 16px;
@@ -455,8 +446,6 @@
   margin-bottom: 20px;
 }
 }
-
-
 
 
 
