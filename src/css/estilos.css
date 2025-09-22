@@ -682,10 +682,10 @@ img{
 
 .timeline-content {
   background: #1c2a35;
-  padding: 20px;
+  padding: 10px;
   flex-direction: column;
   border-radius: 10px;
-  margin: 19px 0px;
+  margin: 1px 0px;
   box-shadow: 0 0 10px #00000055;
 }
 
@@ -693,6 +693,7 @@ img{
   text-align: center;
   font-size: 25px;
   color: #4850c5;
+  margin: 0px 0px;
 }
 
 .timeline-content h3 {
