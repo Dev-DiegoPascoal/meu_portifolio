@@ -709,6 +709,10 @@ img{
   margin-bottom: 10px;
 }
 
+.projetos .container-projetos .logos-aplicativos {
+    width: 280px;
+  }
+
 @keyframes fadeInUp {
   to {
     opacity: 1;
