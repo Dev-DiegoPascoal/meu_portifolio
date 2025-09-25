@@ -710,13 +710,13 @@ img{
 }
 
 .projetos .container-projetos .logos-aplicativos img {
-    height: 320px;
-    width: auto;
-    object-fit: contain;
+    width: 450px;   /* todas terão a mesma largura */
+    height: auto;   /* mantém proporção original */
+    object-fit: contain; /* ajusta sem distorcer */
     display: block;
-    margin: 0 auto;
-    max-width: 88%;
+    margin: 0 auto; /* centraliza dentro do link */
 }
+
 
 @keyframes fadeInUp {
   to {
