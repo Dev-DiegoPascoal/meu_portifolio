@@ -360,8 +360,8 @@ img{
 }
 
 .projetos .projeto {
-  max-width: 260px;
-  max-height: 500px;
+  max-width: 330px;
+  max-height: 600px;
   position: relative;
   display: none;
 }
@@ -709,9 +709,14 @@ img{
   margin-bottom: 10px;
 }
 
-.projetos .container-projetos .logos-aplicativos {
-    width: 280px;
-  }
+.projetos .container-projetos .logos-aplicativos img {
+    height: 320px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    max-width: 88%;
+}
 
 @keyframes fadeInUp {
   to {
