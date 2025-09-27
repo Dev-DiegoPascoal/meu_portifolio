@@ -702,6 +702,13 @@ img{
   color: #00c3ff;
 }
 
+.timeline-content p {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 19px;
+  color: #ffffff;
+}
+
 .timeline-content span {
   font-size: 25px;
   color: #aaa;
