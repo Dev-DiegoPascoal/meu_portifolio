@@ -70,7 +70,7 @@
 }
 
 .projetos .container-projetos .logos-aplicativos {
-  width: 170px;
+  width: 265px;
 }
 
 .projetos .container-projetos h3,
@@ -444,6 +444,10 @@
 .projetos .titulo {
   padding: 2px 5px;
   margin-bottom: 20px;
+}
+
+.projetos .container-projetos .logos-aplicativos {
+  width: 150px;
 }
 }
 
