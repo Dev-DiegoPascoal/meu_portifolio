@@ -505,6 +505,10 @@
  .home .informacoes {
     margin-top: 9px;
   }
+
+  .projetos .titulo-projeto h3 {
+    font-size: 11px;
+}
 }
 
 
