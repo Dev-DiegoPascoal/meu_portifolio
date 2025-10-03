@@ -509,6 +509,30 @@
   .projetos .titulo-projeto h3 {
     font-size: 11px;
 }
+
+.container-projetos .informacoes-projeto {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-projetos .informacoes-projeto p {
+  color: white; /* cor do texto */
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+  opacity: 0.7;
+}
+
 }
 
 
@@ -602,6 +626,8 @@
     font-size: 10px;
     padding: 0 5px;
   }
+
+
 
   .tab-buttons {
     flex-direction: column;
