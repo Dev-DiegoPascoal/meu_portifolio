@@ -3,13 +3,13 @@ html {
   scroll-behavior: smooth;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 body {
@@ -64,13 +64,12 @@ body {
   margin: auto;
 }
 
-
 .cabecalho .menu {
   display: flex;
-  flex-wrap: wrap;           
-  justify-content: center;   
-  gap: 15px;                 
-  padding: 10px 0;        
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
 }
 
 .cabecalho .menu li {
@@ -80,7 +79,7 @@ body {
 .cabecalho .menu li a {
   padding: 12px 24px;
 
-   display: inline-block;
+  display: inline-block;
   padding: 10px 20px;
   border-radius: 40px;
   border-radius: 12px;
@@ -92,7 +91,7 @@ body {
 }
 
 .cabecalho .menu li a:hover {
-  background: rgba(41,171,226,0.3);
+  background: rgba(41, 171, 226, 0.3);
   color: #fff;
   transform: scale(1.05);
 }
@@ -241,7 +240,6 @@ body {
   color: #9443d8;
 }
 
-
 .home .tecnologias-utilizadas {
   display: flex;
   gap: 20px;
@@ -309,8 +307,8 @@ body {
   transform: scale(1.02);
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
 .container-foto {
@@ -359,7 +357,7 @@ img{
   text-align: center;
 }
 
-.projeto ativo{
+.projeto ativo {
   margin: auto 50px;
 }
 
@@ -389,7 +387,6 @@ img{
 .projetos .projeto.ativo {
   display: block;
   margin: 0 20px;
-
 }
 
 .projetos .projeto img {
@@ -420,6 +417,12 @@ img{
 .projetos .container-projetos .projeto:hover .informacoes-projeto {
   opacity: 0.7;
   background-color: #000;
+  width: 331px;
+  height: 230px;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto p {
+  margin: 20px 15px;
 }
 
 .projetos .btn-mostrar-projetos {
@@ -687,8 +690,8 @@ img{
 .timeline {
   position: relative;
   max-width: 1000px; /* Reduz a largura total */
-    margin: 0 auto;
-    padding: 10px 2px;
+  margin: 0 auto;
+  padding: 10px 2px;
 }
 
 .timeline-item {
@@ -737,13 +740,12 @@ img{
 }
 
 .projetos .container-projetos .logos-aplicativos img {
-    width: 450px;   /* todas terão a mesma largura */
-    height: auto;   /* mantém proporção original */
-    object-fit: contain; /* ajusta sem distorcer */
-    display: block;
-    margin: 0 auto; /* centraliza dentro do link */
+  width: 450px; /* todas terão a mesma largura */
+  height: auto; /* mantém proporção original */
+  object-fit: contain; /* ajusta sem distorcer */
+  display: block;
+  margin: 0 auto; /* centraliza dentro do link */
 }
-
 
 @keyframes fadeInUp {
   to {
