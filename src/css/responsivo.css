@@ -11,6 +11,7 @@
     .home .informacoes h2{
     margin-top: 16px;
   }
+  
 }
 
 @media (max-width: 1780px)  {
@@ -88,6 +89,11 @@
 
 .tab-link {
   font-size: 14px;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+  width: 265px;
+  height: 193px;
 }
 }
 
