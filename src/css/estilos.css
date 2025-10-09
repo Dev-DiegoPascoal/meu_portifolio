@@ -1,26 +1,47 @@
 
-
-/* 🎨 Cores padrão (modo claro) */
+/* 🎨 Modo claro */
 :root {
-  --bg-color: #a2e9ff;
+  --bg-body: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   --text-color: #000000;
   --accent-color: #0077ff;
 }
 
 /* 🌙 Modo escuro */
 .dark-mode {
-  --bg-color: #121212;
+  --bg-body: linear-gradient(to right, #121212, #1e1e1e); 
   --text-color: #ffffff;
-  --accent-color:  #203a43, #2c5364;
+  --accent-color: #db2fa8;
 }
 
-/* 🌈 Aplicação das variáveis */
+/* Aplicação das variáveis */
 body {
-  background-color: var(--bg-color);
+  background: var(--bg-body);
   color: var(--text-color);
   font-family: 'Poppins', sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
+/* Menu */
+.cabecalho .menu li a {
+  background: var(--accent-color);
+  color: var(--text-color); 
+  transition: 0.3s;
+}
+
+.cabecalho .menu li a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.redes-sociais li a{
+  
+  color: var(--text-color); 
+  transition: 0.3s;
+}
+
+
+
+
 
 /* ======== SWITCH MODERNO ======== */
 .theme-switch {
@@ -37,37 +58,50 @@ body {
   height: 0;
 }
 
-/* Estilo da "caixa" do switch */
+/* Estilo geral do switch */
 .switch {
-  position: absolute;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: rgb(154, 175, 243); /* cor inicial do fundo */
+  border-radius: 30px;
   cursor: pointer;
-  inset: 0;
-  background-color: #ccc;
-  border-radius: 34px;
   transition: background-color 0.3s ease;
 }
 
 /* Bolinha dentro do switch */
 .switch::before {
-  content: "";
+  content: "☀️"; 
   position: absolute;
-  left: 3px;
+  left: 4px;
   top: 3px;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
   background-color: white;
   border-radius: 50%;
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.5s ease, background-color 0.5s ease, content 0.5s ease;
+  background-color: rgb(88, 125, 243);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Quando o checkbox estiver ativo */
 input:checked + .switch {
-  background-color: var(--accent-color);
+ 
+  background-color: rgb(12, 61, 221); 
 }
 
 input:checked + .switch::before {
-  transform: translateX(24px);
+   content: "🌙"; 
+  background-color: rgb(12, 11, 49); 
+  transform: translateX(24px); 
 }
+
 
 /* Pequena sombra e estilo no hover */
 .switch:hover {
