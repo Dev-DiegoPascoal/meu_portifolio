@@ -20,11 +20,11 @@ body {
   font-family: 'Poppins', sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
 }
-/* 
+
 .cabecalho{
   background: var(--bg-body);
   color: var(--text-color);
-} */
+} 
 
 .cabecalho .menu li a:hover {
   transform: scale(1.05);
