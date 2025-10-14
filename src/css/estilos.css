@@ -37,6 +37,14 @@ body {
   transition: 0.3s;
 }
 
+body .timeline-section {
+
+  background: var(--bg-body);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
 
 
 
