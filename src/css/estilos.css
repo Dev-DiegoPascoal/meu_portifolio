@@ -2,6 +2,7 @@
 /* 🎨 Modo claro */
 :root {
   --bg-body: linear-gradient(to right, #ffffff, #e3f2fd, #bbdefb);
+  --bg-body2: linear-gradient(to right, #ffffff, #e3f2fd);
   --text-color: #000000;
   --accent-color: #0077ff;
 }
@@ -29,6 +30,13 @@ body {
 .cabecalho .menu li a:hover {
   transform: scale(1.05);
   opacity: 0.9;
+}
+
+.container .menu ul li a{
+  background: var(--bg-body2); 
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .redes-sociais li a{
