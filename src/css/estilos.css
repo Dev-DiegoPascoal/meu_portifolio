@@ -8,10 +8,13 @@
 }
 
 /* 🌙 Modo escuro aplicado a html (mais abrangente) */
-  html.dark-mode, body.dark-mode {
-    --bg-body: linear-gradient(to right, #0f2027, #203a43, #3f4142);
-    --text-color: #ffffff;
-    --accent-color: #db2fa8;
+html.dark-mode,
+body.dark-mode {
+  --bg-body: linear-gradient(to right, #203a43);
+  --bg-body2: linear-gradient(to right, #164d5e); 
+  --text-color: #ffffff;
+  --text-colorblue: #8ab4f8; 
+  --accent-color: #db2fa8;
 }
 
 /* Aplicação das variáveis */
@@ -35,8 +38,6 @@ body {
 .container .menu ul li a{
   background: var(--bg-body2); 
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .redes-sociais li a{
