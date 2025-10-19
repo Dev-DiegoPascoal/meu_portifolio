@@ -51,7 +51,8 @@
     <div class="container">
         <header class="cabecalho">
             <a href="#" class="logo">
-                <img src="./src/imagens/logo_diegopascoal_branca.png" alt="Logo Diego Pascoal">
+                <img id="logo-claro" src="./src/imagens/logo_azul_diegopascoal_grande_redimencionda.png" alt="Logo clara">
+                <img id="logo-escuro" src="./src/imagens/logo_diegopascoal_branca.png" alt="Logo escura">
             </a>
 
             
@@ -450,10 +451,19 @@
                 </p>
                 <p>Versão: 2.1.8</p>
             </div>
-    </div>
+        </div>
     </footer>
     <script src="./src/JS/index.js" defer></script>
     <script src="./src/JS/data-hora.js" defer></script>
     <script src="./src/JS/tema.js" defer></script>
+
+    <script>
+  const html = document.documentElement;
+  const botao = document.getElementById("tema-btn");
+
+  botao.addEventListener("click", () => {
+    html.classList.toggle("dark-mode");
+  });
+</script>
 </body>
 </html>
