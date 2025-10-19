@@ -1,72 +1,102 @@
-
 /* 🎨 Modo claro */
 :root {
   --bg-body: linear-gradient(to right, #ffffff, #e3f2fd, #bbdefb);
   --bg-body2: linear-gradient(to right, #ffffff, #e3f2fd);
+  --bg-bodyFooter: linear-gradient(to right, #a6d9fd);
   --text-color: #000000;
   --text-colorblue: #001f8e;
 }
 
-/* 🌙 Modo escuro aplicado a html (mais abrangente) */
+/* 🌙 Modo escuro */
 html.dark-mode,
 body.dark-mode {
   --bg-body: linear-gradient(to right, #203a43);
-  --bg-body2: linear-gradient(to right, #164d5e); 
+  --bg-body2: linear-gradient(to right, #164d5e);
   --text-color: #ffffff;
-  --text-colorblue: #8ab4f8; 
+  --bg-bodyFooter: linear-gradient(to right, rgba(8, 3, 36, 0.7), rgba(22, 77, 94, 0.9));
+  --text-colorblue: #8ab4f8;
   --accent-color: #db2fa8;
+}
+
+/*No tema claro, mostra a logo azul*/
+#logo-claro {
+  display: inline; 
+}
+
+/*esconde a logo branca*/
+#logo-escuro {
+  display: none; 
+}
+
+/*No tema dark esconde a azul */
+body.dark-mode #logo-claro {
+  display: none;
+}
+
+/* mostra a branca */
+body.dark-mode #logo-escuro {
+  display: inline; 
 }
 
 /* Aplicação das variáveis */
 body {
   background: var(--bg-body);
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.cabecalho{
+.cabecalho {
   background: var(--bg-body);
   color: var(--text-color);
-} 
+}
 
-.cabecalho .menu li a:hover {
+body .cabecalho .menu li a:hover {
+  color: var(--text-color);
   transform: scale(1.05);
   opacity: 0.9;
 }
 
-.container .menu ul li a{
-  background: var(--bg-body2); 
+.container .menu ul li a {
+  background: var(--bg-body2);
   color: var(--text-color);
 }
 
-.redes-sociais li a{
-  color: var(--text-color); 
+.redes-sociais li a {
+  color: var(--text-color);
   transition: 0.3s;
 }
 
 body .timeline-section {
-
   background: var(--bg-body);
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-body .timeline-content{
+body .timeline-content {
   background: var(--bg-body);
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-body .timeline-content p{
+body .timeline-content p {
   color: var(--text-color);
 }
-body .timeline-content h3{
+
+body .timeline-content h3 {
   color: var(--text-colorblue);
 }
 
+body .footer {
+  background: var(--bg-bodyFooter);
+  color: var(--text-color);
+}
+
+body .footer a{
+  color: var(--text-color);
+}
 
 
 
@@ -99,7 +129,7 @@ body .timeline-content h3{
 
 /* Bolinha dentro do switch */
 .switch::before {
-  content: "☀️"; 
+  content: "☀️";
   position: absolute;
   left: 4px;
   top: 3px;
@@ -110,7 +140,7 @@ body .timeline-content h3{
   text-align: center;
   background-color: white;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease, background-color 0.5s ease, content 0.5s ease;
   background-color: rgb(88, 125, 243);
   border-radius: 50%;
@@ -119,23 +149,19 @@ body .timeline-content h3{
 
 /* Quando o checkbox estiver ativo */
 input:checked + .switch {
- 
-  background-color: rgb(12, 61, 221); 
+  background-color: rgb(12, 61, 221);
 }
 
 input:checked + .switch::before {
-   content: "🌙"; 
-  background-color: rgb(12, 11, 49); 
-  transform: translateX(24px); 
+  content: "🌙";
+  background-color: rgb(12, 11, 49);
+  transform: translateX(24px);
 }
-
 
 /* Pequena sombra e estilo no hover */
 .switch:hover {
   box-shadow: 0 0 5px var(--accent-color);
 }
-
-
 
 html {
   color: #fff;
@@ -879,11 +905,11 @@ img {
 }
 
 .projetos .container-projetos .logos-aplicativos img {
-  width: 450px; 
-  height: auto; 
-  object-fit: contain; 
+  width: 450px;
+  height: auto;
+  object-fit: contain;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 @keyframes fadeInUp {
