@@ -4,7 +4,6 @@
   --bg-body2: linear-gradient(to right, #ffffff, #e3f2fd);
   --bg-bodyFooter: linear-gradient(to right, #a6d9fd);
   --text-color: #000000;
-  --text-colorblue: #001f8e;
 }
 
 /* 🌙 Modo escuro */
@@ -86,7 +85,7 @@ body .timeline-content p {
 }
 
 body .timeline-content h3 {
-  color: var(--text-colorblue);
+  color: var(--text-color);
 }
 
 body .footer {
