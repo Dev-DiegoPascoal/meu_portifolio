@@ -1,5 +1,6 @@
 
-🚀 Portfólio de Desenvolvimento | Exibindo Habilidades Técnicas
+🚀 Portfólio de Desenvolvimento | Exibindo Habilidades Técnicas.
+
 Este portfólio está focado em demonstrar minhas habilidades práticas em programação e minha proficiência no uso de tecnologias modernas.
 
 Concebido para ser dinâmico e responsivo, o projeto utiliza as stacks e ferramentas mais atuais que domino, garantindo uma experiência de usuário otimizada e refletindo meu compromisso com as melhores práticas de desenvolvimento.
